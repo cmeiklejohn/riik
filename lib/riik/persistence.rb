@@ -32,9 +32,7 @@ module Riik
 
     end
 
-    # Stores the current key.
-    #
-    # @return [String] key.
+    # Set the Riak key for this record.
     #
     attr_accessor :key
 
@@ -79,11 +77,12 @@ module Riik
 
     # Load an object from Riak.
     #
+    # @param [String] key.
     # @return [Object] object.
     #
     def load(key)
       build(bucket.get(key).data)
-      set_key(key)
+      @key = key
       self
     end
 
@@ -94,15 +93,6 @@ module Riik
     #
     def key 
       @key || default_key
-    end
-
-    # Set the key manually on this one record.
-    #
-    # @param [String] key.
-    # @return [String] provided key.
-    #
-    def set_key(key)
-      @key = key
     end
 
     # Convert the argument list to a hash of key/value pairs.
