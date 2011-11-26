@@ -15,6 +15,12 @@ module Riik
         subject.first_name.should == 'Fat'
         subject.last_name.should  == 'Mike'
       end
+
+      it 'saves to riak' do
+        VCR.use_cassette('nonexistent_key') do 
+          subject.save.should be_true
+        end
+      end
     end
   end
 end
