@@ -8,7 +8,7 @@
       accept:
       - multipart/mixed, application/json;q=0.7, */*;q=0.5
       x-riak-clientid:
-      - voqm8A==
+      - urSI0Q==
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
@@ -25,7 +25,7 @@
         rel="riak_kv_wm_object",</riak>; rel="riak_kv_wm_object",</ping>; rel="riak_kv_wm_ping",</buckets>;
         rel="riak_kv_wm_props",</stats>; rel="riak_kv_wm_stats"
       date:
-      - Sat, 26 Nov 2011 05:09:48 GMT
+      - Sat, 26 Nov 2011 06:01:01 GMT
       content-type:
       - application/json
       content-length:
@@ -35,22 +35,22 @@
 - !ruby/struct:VCR::HTTPInteraction
   request: !ruby/struct:VCR::Request
     method: :put
-    uri: http://127.0.0.1:8098/riak/riik/03c4a0b552a61864c7c5380828e21b17?returnbody=true
+    uri: http://127.0.0.1:8098/riak/riik/ac247a5f9fd11735da5cfcb1a67d9c4e37ad53d1?returnbody=true
     body: ! '{"first_name":"Fat","last_name":"Mike"}'
     headers:
       accept:
       - multipart/mixed, application/json;q=0.7, */*;q=0.5
       x-riak-clientid:
-      - voqm8A==
+      - urSI0Q==
       content-type:
-      - application/javascript
+      - application/json
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
     headers:
       x-riak-vclock:
-      - a85hYGBgzGDKBVIcypz/fvodtZDOYEpkyWNlmPPB5QRfFgA=
+      - a85hYGBgzGDKBVIcypz/fvodtRDIYEpkzGNlmPvH5QRfFgA=
       vary:
       - Accept-Encoding
       server:
@@ -58,9 +58,9 @@
       link:
       - </riak/riik>; rel="up"
       date:
-      - Sat, 26 Nov 2011 05:09:48 GMT
+      - Sat, 26 Nov 2011 06:01:01 GMT
       content-type:
-      - application/javascript
+      - application/json
       content-length:
       - '39'
     body: ! '{"first_name":"Fat","last_name":"Mike"}'

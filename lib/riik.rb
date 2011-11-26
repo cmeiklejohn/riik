@@ -2,48 +2,25 @@ require 'riik/version'
 require 'riak'
 
 module Riik
+  autoload :Configuration, 'riik/configuration'
+  autoload :Persistence,   'riik/persistence'
+
   module RObject
     def self.included(base)
-      base.extend(ClassMethods)
+      base.send :extend,  Configuration
+      base.send :include, Persistence
     end
 
-    module ClassMethods
-      attr_accessor :riik_attributes
-
-      def initializes_with(*args)
-        @riik_attributes = args
-
-        args.each do |arg|
-          attr_accessor arg.to_sym
-        end
-      end
+    def riik_attributes
+      self.class.riik_attributes
     end
 
-    def initialize(*args)
-      args.each_with_index do |arg, i|
-        attribute = self.class.riik_attributes[i]
-        instance_variable_set "@#{attribute}", arg
-      end
-    end
-
-    def save
-      Riak::RObject.new(bucket, key).tap do |robject|
-        robject.content_type = content_type
-        robject.data = encoded
-        robject.store
-      end
-    end
-
-    def data
-      Hash[self.class.riik_attributes.map { |key| [key, self.instance_variable_get("@#{key}")] }]
-    end
-
-    def encoded 
-      data.to_json
+    def attributes
+      Hash[riik_attributes.map { |key| [key, instance_variable_get("@#{key}")] }]
     end
 
     def key 
-      Digest::MD5.hexdigest(encoded)
+      Digest::SHA1.hexdigest(attributes.to_json)
     end
 
     def content_type 
