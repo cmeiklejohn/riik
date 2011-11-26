@@ -22,6 +22,11 @@ Gem::Specification.new do |gem|
   gem.add_dependency('riak-client')
   gem.add_dependency('excon')
 
+  gem.add_development_dependency('yard')
+  gem.add_development_dependency('rdoc')
+  gem.add_development_dependency('rdiscount')
+  gem.add_development_dependency('redcarpet')
+
   gem.add_development_dependency('vcr')
   gem.add_development_dependency('webmock')
 
