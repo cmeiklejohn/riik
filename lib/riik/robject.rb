@@ -13,11 +13,12 @@ module Riik
       base.send :include, Persistence
     end
 
-    # Returns the key that should be used to save the Riak object.
+    # Returns the key that should be used to save the Riak object if no
+    # key is present.
     #
     # @return [String] key 
     #
-    def key 
+    def default_key 
       Digest::SHA1.hexdigest(attributes.to_json)
     end
 

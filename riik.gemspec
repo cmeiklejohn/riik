@@ -6,7 +6,7 @@ require "riik/version"
 
 Gem::Specification.new do |gem|
   gem.authors       = ["Christopher Meiklejohn"]
-  gem.email         = ["christopher.meiklejohn@gmail.com"]
+  gem.email         = ["cmeiklejohn@criticalpair.com"]
   gem.description   = %q{Lightweight object mapper for Riak.}
   gem.summary       = %q{Lightweight object mapper for Riak.}
   gem.homepage      = "http://critialpair.com"
