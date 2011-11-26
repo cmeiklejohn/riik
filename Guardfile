@@ -7,3 +7,9 @@ end
 guard 'ctags-bundler' do
   watch(%r{^(app|lib)/.*\.rb$})  { ["lib"] }
 end
+
+guard 'yard' do
+  watch(%r{app/.+\.rb})
+  watch(%r{lib/.+\.rb})
+  watch(%r{ext/.+\.c})
+end
