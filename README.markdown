@@ -32,11 +32,11 @@ See ```lib/riik.rb``` for more information.
 
 All of the model attributes are available as a Hash in ```attributes```.
 
-Want to change the way the key is generated?  Override ```key``` in your
+Want to change the way the key is generated?  Override ```default_key``` in your
 class.
 
 ```ruby 
-def key 
+def default_key 
   Base64::encode(attributes)
 end
 ```

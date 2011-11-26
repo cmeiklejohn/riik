@@ -8,7 +8,7 @@
       accept:
       - multipart/mixed, application/json;q=0.7, */*;q=0.5
       x-riak-clientid:
-      - e8L53Q==
+      - Y4TQ0g==
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 404
@@ -28,74 +28,6 @@
     http_version: '1.1'
 - !ruby/struct:VCR::HTTPInteraction
   request: !ruby/struct:VCR::Request
-    method: :put
-    uri: http://127.0.0.1:8098/riak/riik/3248e8e6ba13e988479ded393dae088c928669f1?returnbody=true
-    body: ! '{"first_name":"Eric","last_name":"Melvin"}'
-    headers:
-      accept:
-      - multipart/mixed, application/json;q=0.7, */*;q=0.5
-      x-riak-clientid:
-      - fGskKA==
-      content-type:
-      - application/json
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
-      code: 200
-      message: OK
-    headers:
-      x-riak-vclock:
-      - a85hYGBgzGDKBVIcypz/fvodtRDLYEoUz2NlqF3leoIvCwA=
-      vary:
-      - Accept-Encoding
-      server:
-      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
-      link:
-      - </riak/riik>; rel="up"
-      date:
-      - Sat, 26 Nov 2011 18:22:53 GMT
-      content-type:
-      - application/json
-      content-length:
-      - '42'
-    body: ! '{"first_name":"Eric","last_name":"Melvin"}'
-    http_version: '1.1'
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
-    method: :get
-    uri: http://127.0.0.1:8098/riak/riik/3248e8e6ba13e988479ded393dae088c928669f1
-    body: 
-    headers:
-      accept:
-      - multipart/mixed, application/json;q=0.7, */*;q=0.5
-      x-riak-clientid:
-      - PPpsCw==
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
-      code: 200
-      message: OK
-    headers:
-      x-riak-vclock:
-      - a85hYGBgzGDKBVIcypz/fvodtRDLYEoUz2NlqF3leoIvCwA=
-      vary:
-      - Accept-Encoding
-      server:
-      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
-      link:
-      - </riak/riik>; rel="up"
-      last-modified:
-      - Sat, 26 Nov 2011 18:22:53 GMT
-      etag:
-      - ! '"2yuUqA5My2DuytPg8MEX9"'
-      date:
-      - Sat, 26 Nov 2011 18:22:53 GMT
-      content-type:
-      - application/json
-      content-length:
-      - '42'
-    body: ! '{"first_name":"Eric","last_name":"Melvin"}'
-    http_version: '1.1'
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
     method: :get
     uri: http://127.0.0.1:8098/
     body: 
@@ -103,7 +35,7 @@
       accept:
       - multipart/mixed, application/json;q=0.7, */*;q=0.5
       x-riak-clientid:
-      - kTCoag==
+      - KaGEhw==
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
@@ -136,14 +68,14 @@
       accept:
       - multipart/mixed, application/json;q=0.7, */*;q=0.5
       x-riak-clientid:
-      - kTCoag==
+      - KaGEhw==
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
     headers:
       x-riak-vclock:
-      - a85hYGBgzGDKBVIcypz/fvodtRDIYEp8kcfK8GGV6wm+LAA=
+      - a85hYGBgzGDKBVIcypz/fvodtRDIYEp8lsfK8GGV6wm+LAA=
       vary:
       - Accept-Encoding
       server:
@@ -153,7 +85,7 @@
       last-modified:
       - Sat, 26 Nov 2011 18:24:48 GMT
       etag:
-      - ! '"639JM6KEGTd9ROLqJMuBs8"'
+      - ! '"17R4PFysa0bmCVDU55NcME"'
       date:
       - Sat, 26 Nov 2011 18:24:48 GMT
       content-type:
@@ -171,7 +103,7 @@
       accept:
       - multipart/mixed, application/json;q=0.7, */*;q=0.5
       x-riak-clientid:
-      - Hfe9Mg==
+      - NhNwQg==
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
@@ -197,36 +129,30 @@
     http_version: '1.1'
 - !ruby/struct:VCR::HTTPInteraction
   request: !ruby/struct:VCR::Request
-    method: :put
-    uri: http://127.0.0.1:8098/riak/riik/ac247a5f9fd11735da5cfcb1a67d9c4e37ad53d1?returnbody=true
-    body: ! '{"first_name":"Eric","last_name":"Melvin"}'
+    method: :delete
+    uri: http://127.0.0.1:8098/riak/riik/ac247a5f9fd11735da5cfcb1a67d9c4e37ad53d1
+    body: 
     headers:
       accept:
       - multipart/mixed, application/json;q=0.7, */*;q=0.5
       x-riak-clientid:
-      - Hfe9Mg==
-      content-type:
-      - application/json
+      - NhNwQg==
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
-      code: 200
-      message: OK
+      code: 204
+      message: No Content
     headers:
-      x-riak-vclock:
-      - a85hYGBgzGDKBVIcypz/fvodtRDIYEp8mcfK8GGV6wm+LAA=
       vary:
       - Accept-Encoding
       server:
       - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
-      link:
-      - </riak/riik>; rel="up"
       date:
       - Sat, 26 Nov 2011 18:24:48 GMT
       content-type:
       - application/json
       content-length:
-      - '42'
-    body: ! '{"first_name":"Eric","last_name":"Melvin"}'
+      - '0'
+    body: 
     http_version: '1.1'
 - !ruby/struct:VCR::HTTPInteraction
   request: !ruby/struct:VCR::Request
@@ -237,7 +163,7 @@
       accept:
       - multipart/mixed, application/json;q=0.7, */*;q=0.5
       x-riak-clientid:
-      - iYw+nA==
+      - VuFevg==
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
@@ -270,97 +196,23 @@
       accept:
       - multipart/mixed, application/json;q=0.7, */*;q=0.5
       x-riak-clientid:
-      - iYw+nA==
+      - VuFevg==
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
-      code: 200
-      message: OK
+      code: 404
+      message: Object Not Found
     headers:
       x-riak-vclock:
-      - a85hYGBgzGDKBVIcypz/fvodtRDIYEp8mcfK8GGV6wm+LAA=
-      vary:
-      - Accept-Encoding
+      - a85hYGBgzGDKBVIcypz/fvodtRDIYEp8nsfK8GGV6wm+LAA=
       server:
       - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
-      link:
-      - </riak/riik>; rel="up"
-      last-modified:
-      - Sat, 26 Nov 2011 18:24:48 GMT
-      etag:
-      - ! '"74YZ3sG59KOTXkWqkma8F3"'
       date:
       - Sat, 26 Nov 2011 18:24:48 GMT
       content-type:
-      - application/json
+      - text/plain
       content-length:
-      - '42'
-    body: ! '{"first_name":"Eric","last_name":"Melvin"}'
-    http_version: '1.1'
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
-    method: :get
-    uri: http://127.0.0.1:8098/
-    body: 
-    headers:
-      accept:
-      - multipart/mixed, application/json;q=0.7, */*;q=0.5
-      x-riak-clientid:
-      - uOAPOw==
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
-      code: 200
-      message: OK
-    headers:
-      vary:
-      - Accept
-      server:
-      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
-      link:
-      - </buckets>; rel="riak_kv_wm_buckets",</riak>; rel="riak_kv_wm_buckets",</buckets>;
-        rel="riak_kv_wm_index",</buckets>; rel="riak_kv_wm_keylist",</buckets>; rel="riak_kv_wm_link_walker",</riak>;
-        rel="riak_kv_wm_link_walker",</mapred>; rel="riak_kv_wm_mapred",</buckets>;
-        rel="riak_kv_wm_object",</riak>; rel="riak_kv_wm_object",</ping>; rel="riak_kv_wm_ping",</buckets>;
-        rel="riak_kv_wm_props",</stats>; rel="riak_kv_wm_stats"
-      date:
-      - Sat, 26 Nov 2011 18:24:48 GMT
-      content-type:
-      - application/json
-      content-length:
-      - '366'
-    body: ! '{"riak_kv_wm_buckets":"/buckets","riak_kv_wm_buckets":"/riak","riak_kv_wm_index":"/buckets","riak_kv_wm_keylist":"/buckets","riak_kv_wm_link_walker":"/buckets","riak_kv_wm_link_walker":"/riak","riak_kv_wm_mapred":"/mapred","riak_kv_wm_object":"/buckets","riak_kv_wm_object":"/riak","riak_kv_wm_ping":"/ping","riak_kv_wm_props":"/buckets","riak_kv_wm_stats":"/stats"}'
-    http_version: '1.1'
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
-    method: :get
-    uri: http://127.0.0.1:8098/riak/riik/ac247a5f9fd11735da5cfcb1a67d9c4e37ad53d1
-    body: 
-    headers:
-      accept:
-      - multipart/mixed, application/json;q=0.7, */*;q=0.5
-      x-riak-clientid:
-      - uOAPOw==
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
-      code: 200
-      message: OK
-    headers:
-      x-riak-vclock:
-      - a85hYGBgzGDKBVIcypz/fvodtRDIYEp8mcfK8GGV6wm+LAA=
-      vary:
-      - Accept-Encoding
-      server:
-      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
-      link:
-      - </riak/riik>; rel="up"
-      last-modified:
-      - Sat, 26 Nov 2011 18:24:48 GMT
-      etag:
-      - ! '"74YZ3sG59KOTXkWqkma8F3"'
-      date:
-      - Sat, 26 Nov 2011 18:24:48 GMT
-      content-type:
-      - application/json
-      content-length:
-      - '42'
-    body: ! '{"first_name":"Eric","last_name":"Melvin"}'
+      - '10'
+    body: ! 'not found
+
+'
     http_version: '1.1'

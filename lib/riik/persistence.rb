@@ -32,6 +32,12 @@ module Riik
 
     end
 
+    # Stores the current key.
+    #
+    # @return [String] key.
+    #
+    attr_accessor :key
+
     # Initialize a new object.
     #
     # @param [Array] argument list for object.
@@ -39,6 +45,15 @@ module Riik
     #
     def initialize(*args)
       build(arguments_to_attributes(*args))
+      self
+    end
+
+    # Destroy an object.
+    #
+    # @return [Object] object.
+    #
+    def destroy
+      Riak::RObject.new(bucket, key).delete
       self
     end
 
@@ -68,7 +83,26 @@ module Riik
     #
     def load(key)
       build(bucket.get(key).data)
+      set_key(key)
       self
+    end
+
+    # Key to use when saving the object.
+    #
+    # @return [String] key.
+    # @private
+    #
+    def key 
+      @key || default_key
+    end
+
+    # Set the key manually on this one record.
+    #
+    # @param [String] key.
+    # @return [String] provided key.
+    #
+    def set_key(key)
+      @key = key
     end
 
     # Convert the argument list to a hash of key/value pairs.
