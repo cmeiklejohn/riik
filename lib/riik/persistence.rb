@@ -96,6 +96,15 @@ module Riik
       @key || default_key
     end
 
+    # Set the key manually on this one record.
+    #
+    # @param [String] key.
+    # @return [String] provided key.
+    #
+    def set_key(key)
+      @key = key
+    end
+
     # Convert the argument list to a hash of key/value pairs.
     #
     # @param [Array] argument list for object
@@ -120,17 +129,6 @@ module Riik
       self
     end
     private :build
-
-    # Set the key if the record has been loaded from Riak.
-    #
-    # @param [String] key.
-    # @return [String] provided key.
-    # @private
-    #
-    def set_key(key)
-      @key = key
-    end
-    private :set_key
 
   end
 end
