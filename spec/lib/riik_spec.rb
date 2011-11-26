@@ -1,4 +1,20 @@
 require 'spec_helper'
 
-describe Riik do 
+module Riik
+  class Person
+    include Riik::RObject
+
+    initializes_with :first_name, :last_name
+  end
+
+  describe Person do 
+    context 'created in memory' do
+      subject { Person.new('Fat', 'Mike') }
+
+      it 'has appropriately initialized attributes' do 
+        subject.first_name.should == 'Fat'
+        subject.last_name.should  == 'Mike'
+      end
+    end
+  end
 end
