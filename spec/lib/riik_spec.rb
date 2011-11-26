@@ -18,6 +18,14 @@ module Riik
       end
     end
 
+    it 'with different attributes from the first will not have the same key' do
+      VCR.use_cassette('creation_of_nonexistent_keys') do
+        person1 = subject.create('Fat', 'Mike')
+        person2 = subject.create('El', 'Hefe')
+        person1.key.should_not == person2.key
+      end
+    end
+
     context 'created in memory' do
       let(:person) { Person.new(*arguments) }
 
@@ -50,7 +58,7 @@ module Riik
         end
       end
 
-      let(:person) { Person.find('03c4a0b552a61864c7c5380828e21b17') }
+      let(:person) { Person.find('ac247a5f9fd11735da5cfcb1a67d9c4e37ad53d1') }
 
       it 'can be found by key' do
         VCR.use_cassette('loading_of_valid_key') do
@@ -83,7 +91,7 @@ module Riik
           subject.first_name.should == 'Eric'
           subject.last_name.should  == 'Melvin'
           
-          subject.load('03c4a0b552a61864c7c5380828e21b17')
+          subject.load('ac247a5f9fd11735da5cfcb1a67d9c4e37ad53d1')
 
           subject.first_name.should == 'Eric'
           subject.last_name.should  == 'Melvin'

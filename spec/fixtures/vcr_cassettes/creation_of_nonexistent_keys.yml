@@ -2,40 +2,13 @@
 - !ruby/struct:VCR::HTTPInteraction
   request: !ruby/struct:VCR::Request
     method: :get
-    uri: http://127.0.0.1:8098/riak/riik/03c4a0b552a61864c7c5380828e21b17
-    body: 
-    headers:
-      accept:
-      - multipart/mixed, application/json;q=0.7, */*;q=0.5
-      x-riak-clientid:
-      - Y4TQ0g==
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
-      code: 404
-      message: Object Not Found
-    headers:
-      server:
-      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
-      date:
-      - Sat, 26 Nov 2011 18:19:01 GMT
-      content-type:
-      - text/plain
-      content-length:
-      - '10'
-    body: ! 'not found
-
-'
-    http_version: '1.1'
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
-    method: :get
     uri: http://127.0.0.1:8098/
     body: 
     headers:
       accept:
       - multipart/mixed, application/json;q=0.7, */*;q=0.5
       x-riak-clientid:
-      - KaGEhw==
+      - vbGNrg==
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
@@ -61,31 +34,29 @@
     http_version: '1.1'
 - !ruby/struct:VCR::HTTPInteraction
   request: !ruby/struct:VCR::Request
-    method: :get
-    uri: http://127.0.0.1:8098/riak/riik/ac247a5f9fd11735da5cfcb1a67d9c4e37ad53d1
-    body: 
+    method: :put
+    uri: http://127.0.0.1:8098/riak/riik/ac247a5f9fd11735da5cfcb1a67d9c4e37ad53d1?returnbody=true
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
     headers:
       accept:
       - multipart/mixed, application/json;q=0.7, */*;q=0.5
       x-riak-clientid:
-      - KaGEhw==
+      - vbGNrg==
+      content-type:
+      - application/json
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
     headers:
       x-riak-vclock:
-      - a85hYGBgzGDKBVIcypz/fvodtRDIYEp8lsfK8GGV6wm+LAA=
+      - a85hYGBgzGDKBVIcypz/fvodtRDIYEp8lMfK8GGV6wm+LAA=
       vary:
       - Accept-Encoding
       server:
       - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
       link:
       - </riak/riik>; rel="up"
-      last-modified:
-      - Sat, 26 Nov 2011 18:24:48 GMT
-      etag:
-      - ! '"17R4PFysa0bmCVDU55NcME"'
       date:
       - Sat, 26 Nov 2011 18:24:48 GMT
       content-type:
@@ -103,7 +74,7 @@
       accept:
       - multipart/mixed, application/json;q=0.7, */*;q=0.5
       x-riak-clientid:
-      - NhNwQg==
+      - 9JkSxA==
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
@@ -129,90 +100,34 @@
     http_version: '1.1'
 - !ruby/struct:VCR::HTTPInteraction
   request: !ruby/struct:VCR::Request
-    method: :delete
-    uri: http://127.0.0.1:8098/riak/riik/ac247a5f9fd11735da5cfcb1a67d9c4e37ad53d1
-    body: 
+    method: :put
+    uri: http://127.0.0.1:8098/riak/riik/8101f5caa353a3add9eba523f2e5a969bc794c88?returnbody=true
+    body: ! '{"first_name":"El","last_name":"Hefe"}'
     headers:
       accept:
       - multipart/mixed, application/json;q=0.7, */*;q=0.5
       x-riak-clientid:
-      - NhNwQg==
+      - 9JkSxA==
+      content-type:
+      - application/json
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
-      code: 204
-      message: No Content
+      code: 200
+      message: OK
     headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtRDJYErkyWNl+LDK9QRfFgA=
       vary:
       - Accept-Encoding
       server:
       - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
-      date:
-      - Sat, 26 Nov 2011 18:24:48 GMT
-      content-type:
-      - application/json
-      content-length:
-      - '0'
-    body: 
-    http_version: '1.1'
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
-    method: :get
-    uri: http://127.0.0.1:8098/
-    body: 
-    headers:
-      accept:
-      - multipart/mixed, application/json;q=0.7, */*;q=0.5
-      x-riak-clientid:
-      - VuFevg==
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
-      code: 200
-      message: OK
-    headers:
-      vary:
-      - Accept
-      server:
-      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
       link:
-      - </buckets>; rel="riak_kv_wm_buckets",</riak>; rel="riak_kv_wm_buckets",</buckets>;
-        rel="riak_kv_wm_index",</buckets>; rel="riak_kv_wm_keylist",</buckets>; rel="riak_kv_wm_link_walker",</riak>;
-        rel="riak_kv_wm_link_walker",</mapred>; rel="riak_kv_wm_mapred",</buckets>;
-        rel="riak_kv_wm_object",</riak>; rel="riak_kv_wm_object",</ping>; rel="riak_kv_wm_ping",</buckets>;
-        rel="riak_kv_wm_props",</stats>; rel="riak_kv_wm_stats"
+      - </riak/riik>; rel="up"
       date:
       - Sat, 26 Nov 2011 18:24:48 GMT
       content-type:
       - application/json
       content-length:
-      - '366'
-    body: ! '{"riak_kv_wm_buckets":"/buckets","riak_kv_wm_buckets":"/riak","riak_kv_wm_index":"/buckets","riak_kv_wm_keylist":"/buckets","riak_kv_wm_link_walker":"/buckets","riak_kv_wm_link_walker":"/riak","riak_kv_wm_mapred":"/mapred","riak_kv_wm_object":"/buckets","riak_kv_wm_object":"/riak","riak_kv_wm_ping":"/ping","riak_kv_wm_props":"/buckets","riak_kv_wm_stats":"/stats"}'
-    http_version: '1.1'
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
-    method: :get
-    uri: http://127.0.0.1:8098/riak/riik/ac247a5f9fd11735da5cfcb1a67d9c4e37ad53d1
-    body: 
-    headers:
-      accept:
-      - multipart/mixed, application/json;q=0.7, */*;q=0.5
-      x-riak-clientid:
-      - VuFevg==
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
-      code: 404
-      message: Object Not Found
-    headers:
-      x-riak-vclock:
-      - a85hYGBgzGDKBVIcypz/fvodtRDIYEp8nsfK8GGV6wm+LAA=
-      server:
-      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
-      date:
-      - Sat, 26 Nov 2011 18:24:48 GMT
-      content-type:
-      - text/plain
-      content-length:
-      - '10'
-    body: ! 'not found
-
-'
+      - '38'
+    body: ! '{"first_name":"El","last_name":"Hefe"}'
     http_version: '1.1'
