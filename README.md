@@ -21,9 +21,9 @@ end
 Then, use it!
 
 ```ruby 
-Person.find('this-key-name') => #<Person.. @first_name="Fat", @last_name="Mike">
-p = Person.new('Fat', 'Mike') =>#<Person.. @first_name="Fat", @last_name="Mike">
-p.save => true
+Person.find('this-key-name')  # => #<Person.. @first_name="Fat", @last_name="Mike">
+p = Person.new('Fat', 'Mike') # => #<Person.. @first_name="Fat", @last_name="Mike">
+p.save # => true
 ```
 
 Customization 
@@ -46,7 +46,7 @@ Want to change the content type?  Override ```content-type``` in your
 class.
 
 ```ruby 
-def content-type 
+def content_type 
   "application/xml"
 end
 ```
@@ -74,4 +74,4 @@ You can also change these attributes per instance!
 License
 =======
 
-Riik is Copyright © 2011 Critial Pair.  Riik is free software, and may be redistributed under the terms specified in the LICENSE file.
+Riik is Copyright © 2011 Critical Pair.  Riik is free software, and may be redistributed under the terms specified in the LICENSE file.
