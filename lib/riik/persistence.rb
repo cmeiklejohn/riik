@@ -29,6 +29,10 @@ module Riik
       end
     end
 
+    def reload
+      self.load(key)
+    end
+
     def load(key)
       self.build(bucket.get(key).data)
       self

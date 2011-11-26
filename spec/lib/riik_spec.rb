@@ -48,6 +48,25 @@ module Riik
           subject.last_name.should  == 'Mike'
         end
       end
+
+      it 'can be updated' do
+        VCR.use_cassette('updating_of_valid_key') do
+          subject.first_name.should == 'Fat'
+          subject.last_name.should  == 'Mike'
+
+          subject.first_name = 'Eric'
+          subject.last_name  = 'Melvin'
+          subject.save
+
+          subject.first_name.should == 'Eric'
+          subject.last_name.should  == 'Melvin'
+          subject.reload
+
+          subject.first_name.should == 'Eric'
+          subject.last_name.should  == 'Melvin'
+          subject.reload
+        end
+      end
     end
   end
 end
