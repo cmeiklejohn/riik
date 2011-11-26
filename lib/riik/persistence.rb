@@ -42,6 +42,15 @@ module Riik
       self
     end
 
+    # Destroy an object.
+    #
+    # @return [Object] object.
+    #
+    def destroy
+      Riak::RObject.new(bucket, key).delete
+      self
+    end
+
     # Save an object to Riak.
     #
     # @return [Object] object.

@@ -8,7 +8,7 @@
       accept:
       - multipart/mixed, application/json;q=0.7, */*;q=0.5
       x-riak-clientid:
-      - s1t6QQ==
+      - GwAcwg==
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
@@ -25,7 +25,7 @@
         rel="riak_kv_wm_object",</riak>; rel="riak_kv_wm_object",</ping>; rel="riak_kv_wm_ping",</buckets>;
         rel="riak_kv_wm_props",</stats>; rel="riak_kv_wm_stats"
       date:
-      - Sat, 26 Nov 2011 06:32:18 GMT
+      - Sat, 26 Nov 2011 17:45:17 GMT
       content-type:
       - application/json
       content-length:
@@ -41,7 +41,7 @@
       accept:
       - multipart/mixed, application/json;q=0.7, */*;q=0.5
       x-riak-clientid:
-      - s1t6QQ==
+      - GwAcwg==
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
@@ -60,7 +60,7 @@
       etag:
       - ! '"6ZAximb323j1oAiDQj5izW"'
       date:
-      - Sat, 26 Nov 2011 06:32:18 GMT
+      - Sat, 26 Nov 2011 17:45:17 GMT
       content-type:
       - application/json
       content-length:

@@ -8,7 +8,7 @@
       accept:
       - multipart/mixed, application/json;q=0.7, */*;q=0.5
       x-riak-clientid:
-      - Y0WzoA==
+      - k5wCOQ==
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
@@ -34,34 +34,28 @@
     http_version: '1.1'
 - !ruby/struct:VCR::HTTPInteraction
   request: !ruby/struct:VCR::Request
-    method: :put
-    uri: http://127.0.0.1:8098/riak/riik/ac247a5f9fd11735da5cfcb1a67d9c4e37ad53d1?returnbody=true
-    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik/invalid-key
+    body: 
     headers:
       accept:
       - multipart/mixed, application/json;q=0.7, */*;q=0.5
       x-riak-clientid:
-      - Y0WzoA==
-      content-type:
-      - application/json
+      - k5wCOQ==
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
-      code: 200
-      message: OK
+      code: 404
+      message: Object Not Found
     headers:
-      x-riak-vclock:
-      - a85hYGBgzGDKBVIcypz/fvodtRDIYEqUyWNlWLvQ9QRfFgA=
-      vary:
-      - Accept-Encoding
       server:
       - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
-      link:
-      - </riak/riik>; rel="up"
       date:
       - Sat, 26 Nov 2011 17:45:17 GMT
       content-type:
-      - application/json
+      - text/plain
       content-length:
-      - '39'
-    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+      - '10'
+    body: ! 'not found
+
+'
     http_version: '1.1'
