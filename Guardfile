@@ -5,5 +5,5 @@ guard 'rspec', :version => 2 do
 end
 
 guard 'ctags-bundler' do
-  watch(%r{^(app|lib|spec/support)/.*\.rb$})  { ["lib", "spec/support"] }
+  watch(%r{^(app|lib)/.*\.rb$})  { ["lib"] }
 end
