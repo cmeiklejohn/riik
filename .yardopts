@@ -1,1 +1,2 @@
--M redcarpet
+--markup markdown
+--markup-provider redcarpet
