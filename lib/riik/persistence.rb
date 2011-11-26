@@ -80,6 +80,15 @@ module Riik
       self
     end
 
+    # Key to use when saving the object.
+    #
+    # @return [String] key.
+    # @private
+    #
+    def key 
+      default_key
+    end
+
     # Convert the argument list to a hash of key/value pairs.
     #
     # @param [Array] argument list for object
