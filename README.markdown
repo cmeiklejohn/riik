@@ -11,7 +11,7 @@ argument list for the initialize method.
 
 ```ruby 
 class Person
-  include Riik::RObject
+  include Riik::Document
   initializes_with :first_name, :last_name
 end
 

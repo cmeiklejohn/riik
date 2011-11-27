@@ -4,8 +4,34 @@ module Riik
   # to serialize the object and save to Riak.
   #
   module Persistence
+
     def self.included(base)
       base.extend(ClassMethods)
+    end
+
+    # Set the Riak key for this record.
+    #
+    attr_accessor :key
+
+    # Key to use when saving the object.
+    #
+    # @return [String] key.
+    #
+    def key 
+      @key && !@key.empty? ? @key : default_key
+    end
+
+    # Store the Riak object for this record.
+    #
+    attr_accessor :robject 
+
+    # Return the already initialized riak object if we have it, if not
+    # generate a new one.
+    # 
+    # @return [Riak::RObject] riak object 
+    #
+    def robject
+      @robject ||= Riak::RObject.new(bucket, key)
     end
 
     module ClassMethods
@@ -29,12 +55,8 @@ module Riik
       def find(key)
         self.new.load(key)
       end
-
+      
     end
-
-    # Set the Riak key for this record.
-    #
-    attr_accessor :key
 
     # Initialize a new object.
     #
@@ -43,16 +65,6 @@ module Riik
     #
     def initialize(*args)
       build(arguments_to_attributes(*args))
-      self
-    end
-
-    # Destroy an object.
-    #
-    # @return [Object] object.
-    #
-    def destroy
-      Riak::RObject.new(bucket, key).delete
-      self
     end
 
     # Save an object to Riak.
@@ -60,11 +72,36 @@ module Riik
     # @return [Object] object.
     #
     def save
-      Riak::RObject.new(bucket, key).tap do |robject|
-        robject.content_type = content_type
-        robject.data = attributes
-        robject.store
-      end
+      robject.content_type = content_type
+      robject.data = attributes
+      robject.store
+    end
+
+    # Load an object from Riak into an object.
+    #
+    # @param [String] key.
+    # @return [Object] object.
+    #
+    def load(key)
+      build(robject.data) if get(key)
+      self
+    end
+
+    # Get a key from Riak.
+    #
+    # @param [String] key.
+    # @return [Riak::RObject] riak object.
+    #
+    def get(key)
+      @robject = bucket.get(key)
+    end
+
+    # Destroy an object.
+    #
+    # @return [Object] object.
+    #
+    def destroy
+      robject.delete
     end
 
     # Reload an object from Riak.
@@ -72,28 +109,24 @@ module Riik
     # @return [Object] returns reinitialized object.
     #
     def reload
-      load(key)
+      load(key) ? true : false
     end
 
-    # Load an object from Riak.
+    # Load the given key/value pairs into the current object.
     #
-    # @param [String] key.
-    # @return [Object] object.
-    #
-    def load(key)
-      build(bucket.get(key).data)
-      @key = key
-      self
-    end
-
-    # Key to use when saving the object.
-    #
-    # @return [String] key.
+    # @param [Hash] key/value attributes hash for object.
+    # @return [Object] object with attributes loaded.
     # @private
     #
-    def key 
-      @key || default_key
+    def build(attributes) 
+      if attributes
+        attributes.each do |key, value|
+          instance_variable_set "@#{key}", value
+        end
+      end
+      self
     end
+    private :build
 
     # Convert the argument list to a hash of key/value pairs.
     #
@@ -106,19 +139,6 @@ module Riik
     end
     private :arguments_to_attributes
 
-    # Load the given key/value pairs into the current object.
-    #
-    # @param [Hash] key/value attributes hash for object.
-    # @return [Object] object with attributes loaded.
-    # @private
-    #
-    def build(attributes) 
-      attributes.each do |key, value|
-        instance_variable_set "@#{key}", value
-      end
-      self
-    end
-    private :build
-
   end
+
 end

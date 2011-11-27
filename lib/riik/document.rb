@@ -1,13 +1,13 @@
 module Riik
 
-  # RObject provides a mixin interface for creating and working with
+  # Document provides a mixin interface for creating and working with
   # Riik objects.
   #
-  # Each document that includes RObject can override the methods in this
+  # Each class that includes Document can override the methods in this
   # class for custom behavior regarding how the document is saved to
   # Riak, where it's save, which client, etc.
   #
-  module RObject
+  module Document
     def self.included(base)
       base.send :extend,  Configuration
       base.send :include, Persistence

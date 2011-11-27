@@ -2,7 +2,7 @@ require 'spec_helper'
 
 module Riik
   class Person
-    include Riik::RObject
+    include Riik::Document
     initializes_with :first_name, :last_name
   end
 
@@ -26,6 +26,28 @@ module Riik
       end
     end
 
+    context 'a new person with an forced nil key' do
+      let(:person) { Person.new(*arguments).tap { |o| o.key = nil } }
+
+      it 'can be saved with the default key' do
+        VCR.use_cassette('creation_of_nonexistent_key_using_default_key') do
+          subject.save.should be_true
+          subject.key.should == subject.default_key
+        end
+      end
+    end
+
+    context 'a new person with an forced blank key' do
+      let(:person) { Person.new(*arguments).tap { |o| o.key = "" } }
+
+      it 'can be saved with the default key' do
+        VCR.use_cassette('creation_of_nonexistent_key_using_default_key') do
+          subject.save.should be_true
+          subject.key.should == subject.default_key
+        end
+      end
+    end
+
     context 'created in memory' do
       let(:person) { Person.new(*arguments) }
 
@@ -46,7 +68,9 @@ module Riik
 
       it 'is not found' do
         VCR.use_cassette('loading_of_invalid_key') do
-          expect { subject.should_not be_an_instance_of(Person) }.to raise_error(Riak::HTTPFailedRequest)
+          expect {
+            subject.should_not be_an_instance_of(Person)
+          }.to raise_error(Riak::HTTPFailedRequest)
         end
       end
     end
@@ -63,6 +87,12 @@ module Riik
       it 'can be found by key' do
         VCR.use_cassette('loading_of_valid_key') do
           subject.should be_an_instance_of(Person)
+        end
+      end
+
+      it 'can be reloaded' do
+        VCR.use_cassette('loading_of_valid_key') do
+          subject.reload.should be_true
         end
       end
 

@@ -19,9 +19,9 @@ module Riik
     # initializes_with :first_name, :last_name 
     # ```
     #
-    #  Defines an initialize method taking two arguments, and two
-    #  attr_accessors for first_name and last_name.  Assigns them on
-    #  object creation.
+    # Defines an initialize method taking two arguments, and two
+    # attr_accessors for first_name and last_name.  Assigns them on
+    # object creation.
     #
     # @param [Array] arugment list for the initializer as symbols
     #
