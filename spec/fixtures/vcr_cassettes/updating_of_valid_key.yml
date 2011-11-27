@@ -1,39 +1,6 @@
 ---
 - !ruby/struct:VCR::HTTPInteraction
   request: !ruby/struct:VCR::Request
-    method: :put
-    uri: http://127.0.0.1:8098/riak/riik/33b14953f51f75298ff68a42227ea6f9b401547b?returnbody=true
-    body: ! '{"first_name":"Eric","last_name":"Melvin"}'
-    headers:
-      accept:
-      - multipart/mixed, application/json;q=0.7, */*;q=0.5
-      x-riak-clientid:
-      - WcSbhg==
-      content-type:
-      - application/json
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
-      code: 200
-      message: OK
-    headers:
-      x-riak-vclock:
-      - a85hYGBgzGDKBVIcypz/fvodtZDIYEpkzGNlWKTvdoIvCwA=
-      vary:
-      - Accept-Encoding
-      server:
-      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
-      link:
-      - </riak/riik>; rel="up"
-      date:
-      - Sun, 27 Nov 2011 03:50:58 GMT
-      content-type:
-      - application/json
-      content-length:
-      - '42'
-    body: ! '{"first_name":"Eric","last_name":"Melvin"}'
-    http_version: '1.1'
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
     method: :get
     uri: http://127.0.0.1:8098/
     body: 
@@ -41,7 +8,7 @@
       accept:
       - multipart/mixed, application/json;q=0.7, */*;q=0.5
       x-riak-clientid:
-      - Q2+UwQ==
+      - 0kp4Kw==
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
@@ -58,7 +25,7 @@
         rel="riak_kv_wm_object",</riak>; rel="riak_kv_wm_object",</ping>; rel="riak_kv_wm_ping",</buckets>;
         rel="riak_kv_wm_props",</stats>; rel="riak_kv_wm_stats"
       date:
-      - Sun, 27 Nov 2011 03:52:52 GMT
+      - Sun, 27 Nov 2011 05:20:33 GMT
       content-type:
       - application/json
       content-length:
@@ -74,14 +41,14 @@
       accept:
       - multipart/mixed, application/json;q=0.7, */*;q=0.5
       x-riak-clientid:
-      - Q2+UwQ==
+      - 0kp4Kw==
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
     headers:
       x-riak-vclock:
-      - a85hYGBgzGDKBVIcypz/fvodtRDIYEpiYGCZm8fKIGLgdoIvCwA=
+      - a85hYGBgzGDKBVIcypz/fvodtRDIYErUz2NlWOjidoIvCwA=
       vary:
       - Accept-Encoding
       server:
@@ -89,11 +56,11 @@
       link:
       - </riak/riik>; rel="up"
       last-modified:
-      - Sun, 27 Nov 2011 03:52:52 GMT
+      - Sun, 27 Nov 2011 05:20:33 GMT
       etag:
-      - ! '"6CrS3tWezsqbXrOEseX3Tj"'
+      - ! '"5Jit49VWsLBH2PkVbvonJO"'
       date:
-      - Sun, 27 Nov 2011 03:52:52 GMT
+      - Sun, 27 Nov 2011 05:20:33 GMT
       content-type:
       - application/json
       content-length:
@@ -109,11 +76,11 @@
       accept:
       - multipart/mixed, application/json;q=0.7, */*;q=0.5
       x-riak-clientid:
-      - Q2+UwQ==
+      - 0kp4Kw==
       content-type:
       - application/json
       x-riak-vclock:
-      - a85hYGBgzGDKBVIcypz/fvodtRDIYEpiYGCZm8fKIGLgdoIvCwA=
+      - a85hYGBgzGDKBVIcypz/fvodtRDIYErUz2NlWOjidoIvCwA=
       link:
       - ''
   response: !ruby/struct:VCR::Response
@@ -122,7 +89,7 @@
       message: OK
     headers:
       x-riak-vclock:
-      - a85hYGBgzGDKBVIcypz/fvodtRDIYEpiYGCZl8fKIGLgdoIvCwA=
+      - a85hYGBgzGDKBVIcypz/fvodtRDIYEo0yGNlWOjidoIvCwA=
       vary:
       - Accept-Encoding
       server:
@@ -130,7 +97,7 @@
       link:
       - </riak/riik>; rel="up"
       date:
-      - Sun, 27 Nov 2011 03:52:52 GMT
+      - Sun, 27 Nov 2011 05:20:33 GMT
       content-type:
       - application/json
       content-length:
@@ -146,7 +113,7 @@
       accept:
       - multipart/mixed, application/json;q=0.7, */*;q=0.5
       x-riak-clientid:
-      - oGqCNw==
+      - V3ZP/w==
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
@@ -163,7 +130,7 @@
         rel="riak_kv_wm_object",</riak>; rel="riak_kv_wm_object",</ping>; rel="riak_kv_wm_ping",</buckets>;
         rel="riak_kv_wm_props",</stats>; rel="riak_kv_wm_stats"
       date:
-      - Sun, 27 Nov 2011 03:52:52 GMT
+      - Sun, 27 Nov 2011 05:20:33 GMT
       content-type:
       - application/json
       content-length:
@@ -179,7 +146,7 @@
       accept:
       - multipart/mixed, application/json;q=0.7, */*;q=0.5
       x-riak-clientid:
-      - oGqCNw==
+      - V3ZP/w==
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
@@ -198,7 +165,7 @@
       etag:
       - ! '"71BeFSbCiW9hosj1wkTbce"'
       date:
-      - Sun, 27 Nov 2011 03:52:52 GMT
+      - Sun, 27 Nov 2011 05:20:33 GMT
       content-type:
       - application/json
       content-length:
@@ -214,7 +181,7 @@
       accept:
       - multipart/mixed, application/json;q=0.7, */*;q=0.5
       x-riak-clientid:
-      - Zxc2zA==
+      - 35rMcg==
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
@@ -231,7 +198,7 @@
         rel="riak_kv_wm_object",</riak>; rel="riak_kv_wm_object",</ping>; rel="riak_kv_wm_ping",</buckets>;
         rel="riak_kv_wm_props",</stats>; rel="riak_kv_wm_stats"
       date:
-      - Sun, 27 Nov 2011 03:52:52 GMT
+      - Sun, 27 Nov 2011 05:20:33 GMT
       content-type:
       - application/json
       content-length:
@@ -247,14 +214,14 @@
       accept:
       - multipart/mixed, application/json;q=0.7, */*;q=0.5
       x-riak-clientid:
-      - Zxc2zA==
+      - 35rMcg==
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
     headers:
       x-riak-vclock:
-      - a85hYGBgzGDKBVIcypz/fvodtRDIYEpiYGCZl8fKIGLgdoIvCwA=
+      - a85hYGBgzGDKBVIcypz/fvodtRDIYEo0yGNlWOjidoIvCwA=
       vary:
       - Accept-Encoding
       server:
@@ -262,11 +229,11 @@
       link:
       - </riak/riik>; rel="up"
       last-modified:
-      - Sun, 27 Nov 2011 03:52:52 GMT
+      - Sun, 27 Nov 2011 05:20:33 GMT
       etag:
-      - ! '"7ZtCFdj1MD2POZRxkIYqAl"'
+      - ! '"30UNjznGo7xCoocRtijhrK"'
       date:
-      - Sun, 27 Nov 2011 03:52:52 GMT
+      - Sun, 27 Nov 2011 05:20:33 GMT
       content-type:
       - application/json
       content-length:

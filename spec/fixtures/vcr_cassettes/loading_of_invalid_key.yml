@@ -8,7 +8,7 @@
       accept:
       - multipart/mixed, application/json;q=0.7, */*;q=0.5
       x-riak-clientid:
-      - PnkYcQ==
+      - lIsveA==
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
@@ -25,7 +25,7 @@
         rel="riak_kv_wm_object",</riak>; rel="riak_kv_wm_object",</ping>; rel="riak_kv_wm_ping",</buckets>;
         rel="riak_kv_wm_props",</stats>; rel="riak_kv_wm_stats"
       date:
-      - Sun, 27 Nov 2011 03:52:52 GMT
+      - Sun, 27 Nov 2011 05:20:32 GMT
       content-type:
       - application/json
       content-length:
@@ -41,7 +41,7 @@
       accept:
       - multipart/mixed, application/json;q=0.7, */*;q=0.5
       x-riak-clientid:
-      - PnkYcQ==
+      - lIsveA==
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 404
@@ -50,7 +50,7 @@
       server:
       - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
       date:
-      - Sun, 27 Nov 2011 03:52:52 GMT
+      - Sun, 27 Nov 2011 05:20:32 GMT
       content-type:
       - text/plain
       content-length:

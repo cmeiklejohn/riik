@@ -8,7 +8,7 @@
       accept:
       - multipart/mixed, application/json;q=0.7, */*;q=0.5
       x-riak-clientid:
-      - i5G8kw==
+      - CRwTUw==
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
@@ -35,13 +35,13 @@
 - !ruby/struct:VCR::HTTPInteraction
   request: !ruby/struct:VCR::Request
     method: :put
-    uri: http://127.0.0.1:8098/riak/riik/ac247a5f9fd11735da5cfcb1a67d9c4e37ad53d1?returnbody=true
-    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    uri: http://127.0.0.1:8098/riak/riik/89a80484f7c8fe6ec453e7921f1e4ae0cb4e057c?returnbody=true
+    body: ! '{"first_name":"Jan","last_name":["Michael","Vincent"]}'
     headers:
       accept:
       - multipart/mixed, application/json;q=0.7, */*;q=0.5
       x-riak-clientid:
-      - i5G8kw==
+      - CRwTUw==
       content-type:
       - application/json
   response: !ruby/struct:VCR::Response
@@ -50,7 +50,7 @@
       message: OK
     headers:
       x-riak-vclock:
-      - a85hYGBgzGDKBVIcypz/fvodtRDIYErUyGNlWODidoIvCwA=
+      - a85hYGBgzGDKBVIcypz/fvodtZDOYErkyWNlWODidoIvCwA=
       vary:
       - Accept-Encoding
       server:
@@ -62,6 +62,6 @@
       content-type:
       - application/json
       content-length:
-      - '39'
-    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+      - '54'
+    body: ! '{"first_name":"Jan","last_name":["Michael","Vincent"]}'
     http_version: '1.1'
