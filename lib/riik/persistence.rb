@@ -135,7 +135,14 @@ module Riik
     # @private
     #
     def arguments_to_attributes(*args)
-      Hash[args.each_with_index.map { |arg, i| [riik_attributes[i], arg] }]
+      attributes = riik_attributes.each_with_index.map do |attribute, i|
+        if i == riik_attributes.length - 1 && args.length > 1
+          [attribute, args]
+        else
+          [attribute, args.slice!(0)]
+        end
+      end
+      Hash[attributes]
     end
     private :arguments_to_attributes
 

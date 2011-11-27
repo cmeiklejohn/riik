@@ -7,9 +7,10 @@ module Riik
   end
 
   describe Person do
+    let(:arguments) { ['Fat', 'Mike'] }
+
     subject { person }
 
-    let(:arguments) { ['Fat', 'Mike'] }
     let(:person) { Person }
 
     it 'can be created in riak' do
@@ -23,6 +24,15 @@ module Riik
         person1 = subject.create('Fat', 'Mike')
         person2 = subject.create('El', 'Hefe')
         person1.key.should_not == person2.key
+      end
+    end
+
+    it 'handles extra arguments correctly by applying them to the last attribute' do
+      VCR.use_cassette('creation_of_nonexistent_key_with_extra_args') do
+        person = subject.create('Jan', 'Michael', 'Vincent')
+        person.should be_an_instance_of(Person)
+        person.first_name.should == 'Jan'
+        person.last_name.should == ['Michael', 'Vincent']
       end
     end
 
