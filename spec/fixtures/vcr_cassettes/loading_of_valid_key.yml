@@ -2,40 +2,13 @@
 - !ruby/struct:VCR::HTTPInteraction
   request: !ruby/struct:VCR::Request
     method: :get
-    uri: http://127.0.0.1:8098/riak/riik/03c4a0b552a61864c7c5380828e21b17
-    body: 
-    headers:
-      accept:
-      - multipart/mixed, application/json;q=0.7, */*;q=0.5
-      x-riak-clientid:
-      - kMNHjA==
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
-      code: 404
-      message: Object Not Found
-    headers:
-      server:
-      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
-      date:
-      - Sat, 26 Nov 2011 18:19:01 GMT
-      content-type:
-      - text/plain
-      content-length:
-      - '10'
-    body: ! 'not found
-
-'
-    http_version: '1.1'
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
-    method: :get
     uri: http://127.0.0.1:8098/
     body: 
     headers:
       accept:
       - multipart/mixed, application/json;q=0.7, */*;q=0.5
       x-riak-clientid:
-      - lp2w1w==
+      - ePJF2w==
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
@@ -52,7 +25,7 @@
         rel="riak_kv_wm_object",</riak>; rel="riak_kv_wm_object",</ping>; rel="riak_kv_wm_ping",</buckets>;
         rel="riak_kv_wm_props",</stats>; rel="riak_kv_wm_stats"
       date:
-      - Sat, 26 Nov 2011 18:24:48 GMT
+      - Sun, 27 Nov 2011 03:40:33 GMT
       content-type:
       - application/json
       content-length:
@@ -68,14 +41,14 @@
       accept:
       - multipart/mixed, application/json;q=0.7, */*;q=0.5
       x-riak-clientid:
-      - lp2w1w==
+      - ePJF2w==
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
     headers:
       x-riak-vclock:
-      - a85hYGBgzGDKBVIcypz/fvodtRDIYEp8msfK8GGV6wm+LAA=
+      - a85hYGBgzGDKBVIcypz/fvodtRDIYEpiYGB+kMfKYKjrdoIvCwA=
       vary:
       - Accept-Encoding
       server:
@@ -83,11 +56,11 @@
       link:
       - </riak/riik>; rel="up"
       last-modified:
-      - Sat, 26 Nov 2011 18:24:48 GMT
+      - Sun, 27 Nov 2011 03:40:33 GMT
       etag:
-      - ! '"kVxLCv9taLSQMoqkcMV5X"'
+      - ! '"4HFq2EQlTuu3fQE2gE4RiQ"'
       date:
-      - Sat, 26 Nov 2011 18:24:48 GMT
+      - Sun, 27 Nov 2011 03:40:33 GMT
       content-type:
       - application/json
       content-length:

@@ -8,7 +8,7 @@
       accept:
       - multipart/mixed, application/json;q=0.7, */*;q=0.5
       x-riak-clientid:
-      - w4IepA==
+      - wrKSww==
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
@@ -41,7 +41,7 @@
       accept:
       - multipart/mixed, application/json;q=0.7, */*;q=0.5
       x-riak-clientid:
-      - w4IepA==
+      - wrKSww==
       content-type:
       - application/json
   response: !ruby/struct:VCR::Response
@@ -50,7 +50,7 @@
       message: OK
     headers:
       x-riak-vclock:
-      - a85hYGBgzGDKBVIcypz/fvodtRDIYEpiYGB+nMfKYKjrdoIvCwA=
+      - a85hYGBgzGDKBVIcypz/fvodtRDIYEpiYGC+k8fKYKjrdoIvCwA=
       vary:
       - Accept-Encoding
       server:

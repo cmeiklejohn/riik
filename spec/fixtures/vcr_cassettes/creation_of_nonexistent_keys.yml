@@ -8,7 +8,7 @@
       accept:
       - multipart/mixed, application/json;q=0.7, */*;q=0.5
       x-riak-clientid:
-      - vbGNrg==
+      - Je9K5A==
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
@@ -25,7 +25,7 @@
         rel="riak_kv_wm_object",</riak>; rel="riak_kv_wm_object",</ping>; rel="riak_kv_wm_ping",</buckets>;
         rel="riak_kv_wm_props",</stats>; rel="riak_kv_wm_stats"
       date:
-      - Sat, 26 Nov 2011 18:24:48 GMT
+      - Sun, 27 Nov 2011 03:40:33 GMT
       content-type:
       - application/json
       content-length:
@@ -41,7 +41,7 @@
       accept:
       - multipart/mixed, application/json;q=0.7, */*;q=0.5
       x-riak-clientid:
-      - vbGNrg==
+      - Je9K5A==
       content-type:
       - application/json
   response: !ruby/struct:VCR::Response
@@ -50,7 +50,7 @@
       message: OK
     headers:
       x-riak-vclock:
-      - a85hYGBgzGDKBVIcypz/fvodtRDIYEp8lMfK8GGV6wm+LAA=
+      - a85hYGBgzGDKBVIcypz/fvodtRDIYEpiYGC+lcfKYKjrdoIvCwA=
       vary:
       - Accept-Encoding
       server:
@@ -58,7 +58,7 @@
       link:
       - </riak/riik>; rel="up"
       date:
-      - Sat, 26 Nov 2011 18:24:48 GMT
+      - Sun, 27 Nov 2011 03:40:33 GMT
       content-type:
       - application/json
       content-length:
@@ -74,7 +74,7 @@
       accept:
       - multipart/mixed, application/json;q=0.7, */*;q=0.5
       x-riak-clientid:
-      - 9JkSxA==
+      - WLhGLA==
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
@@ -91,7 +91,7 @@
         rel="riak_kv_wm_object",</riak>; rel="riak_kv_wm_object",</ping>; rel="riak_kv_wm_ping",</buckets>;
         rel="riak_kv_wm_props",</stats>; rel="riak_kv_wm_stats"
       date:
-      - Sat, 26 Nov 2011 18:24:48 GMT
+      - Sun, 27 Nov 2011 03:40:33 GMT
       content-type:
       - application/json
       content-length:
@@ -107,7 +107,7 @@
       accept:
       - multipart/mixed, application/json;q=0.7, */*;q=0.5
       x-riak-clientid:
-      - 9JkSxA==
+      - WLhGLA==
       content-type:
       - application/json
   response: !ruby/struct:VCR::Response
@@ -116,7 +116,7 @@
       message: OK
     headers:
       x-riak-vclock:
-      - a85hYGBgzGDKBVIcypz/fvodtRDJYErkyWNl+LDK9QRfFgA=
+      - a85hYGBgzGDKBVIcypz/fvodtRDJYEoMz2NlMNR1O8GXBQA=
       vary:
       - Accept-Encoding
       server:
@@ -124,7 +124,7 @@
       link:
       - </riak/riik>; rel="up"
       date:
-      - Sat, 26 Nov 2011 18:24:48 GMT
+      - Sun, 27 Nov 2011 03:40:33 GMT
       content-type:
       - application/json
       content-length:
