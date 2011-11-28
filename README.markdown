@@ -3,6 +3,19 @@ Riik
 
 Lightweight object mapper for Riak.
 
+Motivation
+==========
+
+Riik doesn't support everything you would exepct from a full ORM.  There
+are no validations, no callbacks, etc,.  as the primary motivation was
+providing an extremely thin abstraction over RObject allowing you to map
+classes and object to serialized keys.  The benefits come from being
+able to work with a lightweight abstraction without dependencies on
+larger, external gems, such as activesupport and activemodel.
+
+If you're building an entire site with Riak as the primary data store,
+you should be looking at [Ripple]{https://github.com/seancribbs/ripple}.
+
 Usage 
 =====
 
