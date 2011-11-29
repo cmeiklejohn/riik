@@ -1,38 +1,28 @@
 ---
 - !ruby/struct:VCR::HTTPInteraction
   request: !ruby/struct:VCR::Request
-    method: :put
-    uri: http://127.0.0.1:8098/riak/riik_person/UVYQ98eLNZNieppMGN5BcTwKpxC?returnbody=true
-    body: ! '{"first_name":"Eric","last_name":"Melvin"}'
+    method: :delete
+    uri: http://127.0.0.1:8098/riak/riik_person/UVYQ98eLNZNieppMGN5BcTwKpxC
+    body: 
     headers:
       accept:
       - multipart/mixed, application/json;q=0.7, */*;q=0.5
       x-riak-clientid:
       - jmE3aA==
-      content-type:
-      - application/json
-      x-riak-vclock:
-      - a85hYGBgzGDKBVIcypz/fvodtcjOYEpkzGNl+PXG4wRfFgA=
-      link:
-      - ''
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
-      code: 200
-      message: OK
+      code: 204
+      message: No Content
     headers:
-      x-riak-vclock:
-      - a85hYGBgzGDKBVIcypz/fvodtcjOYEpkymNl+PXG4wRfFgA=
       vary:
       - Accept-Encoding
       server:
       - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
-      link:
-      - </riak/riik_person>; rel="up"
       date:
       - Tue, 29 Nov 2011 05:43:22 GMT
       content-type:
       - application/json
       content-length:
-      - '42'
-    body: ! '{"first_name":"Eric","last_name":"Melvin"}'
+      - '0'
+    body: 
     http_version: '1.1'
