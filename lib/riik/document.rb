@@ -8,7 +8,7 @@ module Riik
     end
 
     module ClassMethods
-      attr_accessor :riik_attributes
+      attr_reader :riik_attributes
 
       def property(attribute)
         @riik_attributes ||= []
@@ -28,6 +28,16 @@ module Riik
 
     def riik_attributes
       self.class.riik_attributes
+    end
+
+    def bucket 
+      self.class.to_s.gsub(/::/, '_').downcase
+    end
+
+    def robject
+      @robject ||= Riak::RObject.new(bucket).tap do |object|
+        object.content_type = "application/javascript"
+      end
     end
   end
 end

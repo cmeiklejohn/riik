@@ -20,6 +20,14 @@ module Riik
         end
       end
 
+      it 'contains a bucket derived from the name' do
+        subject.bucket.should == "riik_person"
+      end
+
+      it 'contains a robject of content type javascript' do 
+        subject.robject.should be_an_instance_of(Riak::RObject)
+        subject.robject.content_type.should == "application/javascript"
+      end
     end
 
     context 'with some attributes' do 
