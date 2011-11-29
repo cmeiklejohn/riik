@@ -1,7 +1,10 @@
 module Riik
   module Document
+    autoload :Persistence, 'riik/document/persistence'
+
     def self.included(base)
-      base.extend ClassMethods
+      base.send :extend, ClassMethods
+      base.send :include, Persistence
     end
 
     module ClassMethods
