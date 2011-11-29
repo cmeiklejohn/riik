@@ -1,11 +1,6 @@
 require 'spec_helper'
 
 module Riik
-  class Person
-    include Riik::Document
-    initializes_with :first_name, :last_name
-  end
-
   describe Person do
     let(:arguments) { ['Fat', 'Mike'] }
 

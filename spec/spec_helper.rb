@@ -13,3 +13,10 @@ VCR.config do |c|
   c.stub_with :webmock
   c.default_cassette_options = { :record => :none }
 end
+
+module Riik
+  class Person
+    include Riik::Document
+    initializes_with :first_name, :last_name
+  end
+end
