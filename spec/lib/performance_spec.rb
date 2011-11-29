@@ -8,6 +8,14 @@ module Riik
   class RippleDocument; include Ripple::Document; property :number, Integer; end
 
   describe 'The performance' do 
+    before do 
+      WebMock.allow_net_connect!
+    end
+
+    after do 
+      WebMock.disable_net_connect!
+    end
+
     context 'when creating one record' do 
       it 'is faster than ripple' do 
         ripple_time = Benchmark.realtime do 
