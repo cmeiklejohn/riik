@@ -6,6 +6,7 @@ $LOAD_PATH << File.join(PROJECT_ROOT, "lib")
 Bundler.require
 
 require 'riik'
+
 require 'vcr'
 
 VCR.config do |c|
@@ -14,9 +15,13 @@ VCR.config do |c|
   c.default_cassette_options = { :record => :none }
 end
 
+# Test class.
+#
 module Riik
   class Person
     include Riik::Document
-    initializes_with :first_name, :last_name
+
+    property :first
+    property :last
   end
 end
