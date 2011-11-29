@@ -8,7 +8,7 @@
       accept:
       - multipart/mixed, application/json;q=0.7, */*;q=0.5
       x-riak-clientid:
-      - 6dyXnA==
+      - jmE3aA==
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
@@ -25,7 +25,7 @@
         rel="riak_kv_wm_object",</riak>; rel="riak_kv_wm_object",</ping>; rel="riak_kv_wm_ping",</buckets>;
         rel="riak_kv_wm_props",</stats>; rel="riak_kv_wm_stats"
       date:
-      - Tue, 29 Nov 2011 05:36:37 GMT
+      - Tue, 29 Nov 2011 05:43:22 GMT
       content-type:
       - application/json
       content-length:
@@ -41,7 +41,7 @@
       accept:
       - multipart/mixed, application/json;q=0.7, */*;q=0.5
       x-riak-clientid:
-      - 6dyXnA==
+      - jmE3aA==
       content-type:
       - application/json
   response: !ruby/struct:VCR::Response
@@ -50,17 +50,17 @@
       message: Created
     headers:
       x-riak-vclock:
-      - a85hYGBgzGDKBVIcypz/fvodtRDIYEpkzGNlSHvtcYIvCwA=
+      - a85hYGBgzGDKBVIcypz/fvodtcjOYEpkzGNl+PXG4wRfFgA=
       vary:
       - Accept-Encoding
       server:
       - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
       location:
-      - /riak/riik_person/Mx63UoybQa7pUzkskp8qToXDIL1
+      - /riak/riik_person/UVYQ98eLNZNieppMGN5BcTwKpxC
       link:
       - </riak/riik_person>; rel="up"
       date:
-      - Tue, 29 Nov 2011 05:36:38 GMT
+      - Tue, 29 Nov 2011 05:43:22 GMT
       content-type:
       - application/json
       content-length:
