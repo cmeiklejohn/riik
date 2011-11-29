@@ -1,0 +1,2861 @@
+---
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/2TwY2QhUIccb4wSBk2FbfxUljGO
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - 3uEQ0Q==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtRDOYEpkzGNlWPHc4wRfFgA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:25:13 GMT
+      etag:
+      - ! '"22v2CxzKBJv74zstFgHmLc"'
+      date:
+      - Tue, 29 Nov 2011 05:20:40 GMT
+      content-type:
+      - application/javascript
+      content-length:
+      - '40'
+    body: ! '{:first_name=>"Fat", :last_name=>"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/2l3liAvGFRX9yGgOYXW6i3q8LSA
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - 3uEQ0Q==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtRDOYEpkzGNlWPHc4wRfFgA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:25:13 GMT
+      etag:
+      - ! '"2ErvokDFAler5Fq2LAG292"'
+      date:
+      - Tue, 29 Nov 2011 05:20:40 GMT
+      content-type:
+      - application/javascript
+      content-length:
+      - '40'
+    body: ! '{:first_name=>"Fat", :last_name=>"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/NUBGdslpwK8XxXmGrpJnmvS09nd
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - 3uEQ0Q==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtRDIYEpkzGNlWPHc4wRfFgA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:25:13 GMT
+      etag:
+      - ! '"2wOFZeDvQOT8s7oBDgvlsf"'
+      date:
+      - Tue, 29 Nov 2011 05:20:40 GMT
+      content-type:
+      - application/javascript
+      content-length:
+      - '40'
+    body: ! '{:first_name=>"Fat", :last_name=>"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/8T5CN2AbbuPXyty63uywiGnT4a1
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - 3uEQ0Q==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtRDPYEpkzGNlWPHc4wRfFgA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:25:13 GMT
+      etag:
+      - ! '"74j1UuoobpdJXmguSl5puJ"'
+      date:
+      - Tue, 29 Nov 2011 05:20:40 GMT
+      content-type:
+      - application/javascript
+      content-length:
+      - '40'
+    body: ! '{:first_name=>"Fat", :last_name=>"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/AVsP6jyTdl1nyMgqi03ohoSUZrh
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - KqJhOg==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtSjPYEpkzGNlePjc4wRfFgA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:26:11 GMT
+      etag:
+      - ! '"6kGY895r7gaf8mEqrC863q"'
+      date:
+      - Tue, 29 Nov 2011 05:21:37 GMT
+      content-type:
+      - application/javascript
+      content-length:
+      - '40'
+    body: ! '{:first_name=>"Fat", :last_name=>"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/VITvLygsFTMlgqW3N1E3gwqKH0A
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - KqJhOg==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtRDOYEpkzGNlePjc4wRfFgA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:26:11 GMT
+      etag:
+      - ! '"6aPu6CWaNCioz0ApLOi6lM"'
+      date:
+      - Tue, 29 Nov 2011 05:21:37 GMT
+      content-type:
+      - application/javascript
+      content-length:
+      - '40'
+    body: ! '{:first_name=>"Fat", :last_name=>"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/Fv41ehC1nxujfAoAkZjIY2TIOY2
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - KqJhOg==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtRDKYEpkzGNlePjc4wRfFgA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:26:11 GMT
+      etag:
+      - ! '"6bTjNXHo2r73HAgzmHtu8m"'
+      date:
+      - Tue, 29 Nov 2011 05:21:37 GMT
+      content-type:
+      - application/javascript
+      content-length:
+      - '40'
+    body: ! '{:first_name=>"Fat", :last_name=>"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/2nJILDUt9ksCBUEzX31Zb3MzweX
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - KqJhOg==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtZDJYEpkzGNlePjc4wRfFgA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:26:11 GMT
+      etag:
+      - ! '"4Nos8oX76QCW1FRcENCoSh"'
+      date:
+      - Tue, 29 Nov 2011 05:21:37 GMT
+      content-type:
+      - application/javascript
+      content-length:
+      - '40'
+    body: ! '{:first_name=>"Fat", :last_name=>"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/TwCUv26nyzeRE9ESWxmRc7tHG43
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - fa6gXg==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtZDJYEpkzGNlePHc4wRfFgA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:26:18 GMT
+      etag:
+      - ! '"3DOGGXgWQfWUbo3dWFvaJ9"'
+      date:
+      - Tue, 29 Nov 2011 05:21:44 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/QuuUhHwq36oMciOzEKxQ2MJ3bFF
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - fa6gXg==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodteDLYEpkzGNlePHc4wRfFgA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:26:18 GMT
+      etag:
+      - ! '"4d5Hrk9gi3UCKEqRgHDvyu"'
+      date:
+      - Tue, 29 Nov 2011 05:21:44 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/IyoN2MfStt9kMFmebNSTCjfxXyH
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - fa6gXg==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtRDLYEpkzGNlePHc4wRfFgA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:26:18 GMT
+      etag:
+      - ! '"2KIJpDord1HryHg82LomVU"'
+      date:
+      - Tue, 29 Nov 2011 05:21:44 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/JdmYki24orFIX7WjnV4ePNu9V5o
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - fa6gXg==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtZDKYEpkzGNlePHc4wRfFgA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:26:18 GMT
+      etag:
+      - ! '"21DnjKy81EwnctB0W7lrVd"'
+      date:
+      - Tue, 29 Nov 2011 05:21:44 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/3eRgX3xNS50HmhuRwCdmoS6KYbo
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - H/1mVQ==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtZDJYEpkzGNleP/c4wRfFgA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:26:25 GMT
+      etag:
+      - ! '"12elp02yX45L9qDolLREFn"'
+      date:
+      - Tue, 29 Nov 2011 05:21:51 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/6fkJXNK1eppXDf1Ijnzj0xcrNvY
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - H/1mVQ==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtSjPYEpkzGNleP/c4wRfFgA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:26:25 GMT
+      etag:
+      - ! '"5AsaAzJe3K1ghBY7IWLPn0"'
+      date:
+      - Tue, 29 Nov 2011 05:21:51 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/2wjo9ocmNqPu9KIb6tGJ36mIEBS
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - H/1mVQ==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtRDKYEpkzGNleP/c4wRfFgA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:26:25 GMT
+      etag:
+      - ! '"63sgEMoS9GUB74uIqHttNM"'
+      date:
+      - Tue, 29 Nov 2011 05:21:51 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/49iJwi5vEnkVBo5X2Br9yJCRA86
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - H/1mVQ==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtRDOYEpkzGNleP/c4wRfFgA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:26:25 GMT
+      etag:
+      - ! '"4MUS5wCADFH2VA3m3RJkng"'
+      date:
+      - Tue, 29 Nov 2011 05:21:51 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/Aq4CmxnRmGw2hygZ4GNm5DD1VCQ
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - yGs1Mw==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtRDKYEpkzGNlEHnhcYIvCwA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:27:03 GMT
+      etag:
+      - ! '"4gKWrWNnwZtXpvm7T1xW8Y"'
+      date:
+      - Tue, 29 Nov 2011 05:22:28 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/HyDbqqUiMUmS4gdmWrxlW7LjSBn
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - yGs1Mw==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtSjPYEpkzGNlEHnhcYIvCwA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:27:03 GMT
+      etag:
+      - ! '"6gZqXBHVE6POsn97UNyGkX"'
+      date:
+      - Tue, 29 Nov 2011 05:22:28 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/V27S6BA8znisav4EjMWNHNQMTHZ
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - yGs1Mw==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtajKYEpkzGNlEH3hcYIvCwA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:27:03 GMT
+      etag:
+      - ! '"10uOrOG7ndCLHB12Cjm86F"'
+      date:
+      - Tue, 29 Nov 2011 05:22:29 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/Rq0KF1As3BsZMBhBVSoIlfwCGwN
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - yGs1Mw==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtZDIYEpkzGNlEH3hcYIvCwA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:27:03 GMT
+      etag:
+      - ! '"2HIXwuM5gEWnxoYysdNxsz"'
+      date:
+      - Tue, 29 Nov 2011 05:22:29 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/QdLqU04QM4jaPX7Bnhkm7OUb3hp
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - RdVfwg==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtZDJYEpkzGNluP3C4wRfFgA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:30:24 GMT
+      etag:
+      - ! '"O4ltHbYdcXTXpvYPgfhPm"'
+      date:
+      - Tue, 29 Nov 2011 05:25:47 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/G3gqzw5LbXn5BnpzjXqoZrWg59N
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - RdVfwg==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtRDOYEpkzGNluP3C4wRfFgA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:30:24 GMT
+      etag:
+      - ! '"1LGZhXnd1AvRKZSsfYHqc9"'
+      date:
+      - Tue, 29 Nov 2011 05:25:47 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/RNwaWvVj6RvuXORttj7fArD59Wm
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - RdVfwg==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtRDMYEpkzGNluP3C4wRfFgA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:30:24 GMT
+      etag:
+      - ! '"5VJZQg1oTXo695uNIfGKNp"'
+      date:
+      - Tue, 29 Nov 2011 05:25:47 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/N1whcGVroYrGU4YwMlZJ2K1HDTG
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - RdVfwg==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodteDLYEpkzGNluPPC4wRfFgA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:30:24 GMT
+      etag:
+      - ! '"jBskSuLsDHpiK1hd6VIU1"'
+      date:
+      - Tue, 29 Nov 2011 05:25:48 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/1iMcAS3EASDDwlIQxjzXZzutp7K
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - 6Gw+aA==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtZDJYEpkzGNlePPC4wRfFgA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:30:41 GMT
+      etag:
+      - ! '"5C5iFzY4XxyaCXQUtG1SXv"'
+      date:
+      - Tue, 29 Nov 2011 05:26:04 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/AQjRQ9OXXXXW6YCHJCCbZXBI0x9
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - 6Gw+aA==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodteDLYEpkzGNlePPC4wRfFgA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:30:41 GMT
+      etag:
+      - ! '"6AMjd4BmwjpMExxr0NsJdz"'
+      date:
+      - Tue, 29 Nov 2011 05:26:04 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/R7UvKMrMstbFq7uqKVatEOw5QVe
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - 6Gw+aA==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodteDLYEpkzGNlePPC4wRfFgA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:30:41 GMT
+      etag:
+      - ! '"65hZNpdYSKK8DZgt55Gzqt"'
+      date:
+      - Tue, 29 Nov 2011 05:26:04 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/91PoG88jEBGgbZwTgcE0Jaw0X26
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - 6Gw+aA==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtZDOYEpkzGNlePPC4wRfFgA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:30:41 GMT
+      etag:
+      - ! '"6hK4XazzEltKQMXKxBrYiH"'
+      date:
+      - Tue, 29 Nov 2011 05:26:04 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/IR10mubGT5F5f4V4F61EoLi8DT9
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - /ODl8Q==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtRDIYEpkzGNlYH/pcYIvCwA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:31:08 GMT
+      etag:
+      - ! '"6SmyVO2oiVjNuPOKK4FBeZ"'
+      date:
+      - Tue, 29 Nov 2011 05:26:31 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/DFB9VYoi8W6zW0qaLHnUsEZgCTj
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - /ODl8Q==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtajKYEpkzGNlYH/pcYIvCwA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:31:08 GMT
+      etag:
+      - ! '"35AuaeivNps6XXbKttcrBY"'
+      date:
+      - Tue, 29 Nov 2011 05:26:31 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/KWVE24FZ1z2cyD9PwTzksE2UwVx
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - /ODl8Q==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtRDMYEpkzGNlYH/pcYIvCwA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:31:08 GMT
+      etag:
+      - ! '"4FrZmQhcJ93PBPPiFfTRjF"'
+      date:
+      - Tue, 29 Nov 2011 05:26:31 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/Cl5PW2yMXNHpXJ6Lbh0NrVZN0mm
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - /ODl8Q==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtZDMYEpkzGNlYH/pcYIvCwA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:31:08 GMT
+      etag:
+      - ! '"4q6nfaDwuhwqkIz81M2ZQq"'
+      date:
+      - Tue, 29 Nov 2011 05:26:31 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/ZOUForPDFlylSUryRlxWbtZsf1j
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - caFn1Q==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtZDOYEpkzGNlkH3pcYIvCwA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:31:31 GMT
+      etag:
+      - ! '"6E526gGEchb0MSUHqxz3sv"'
+      date:
+      - Tue, 29 Nov 2011 05:26:53 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/CT3eEg0yN94iVdXl5nnOa6k7nx5
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - caFn1Q==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtRDNYEpkzGNlkH3pcYIvCwA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:31:31 GMT
+      etag:
+      - ! '"6NaQe2nxXVaM4JU5CXwggt"'
+      date:
+      - Tue, 29 Nov 2011 05:26:53 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/YJ21MZovLQLgwoyJJXJQoswQure
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - caFn1Q==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtZDJYEpkzGNlkHvpcYIvCwA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:31:31 GMT
+      etag:
+      - ! '"hLUNIT7JA8KaalZIiMw4M"'
+      date:
+      - Tue, 29 Nov 2011 05:26:54 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/FRwCdx2eftItEfuQH2s4X1xDMKK
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - caFn1Q==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtRDKYEpkzGNlkHvpcYIvCwA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:31:31 GMT
+      etag:
+      - ! '"2fsSo40PF6yHSVzylGntET"'
+      date:
+      - Tue, 29 Nov 2011 05:26:54 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/WGAEO11rpytOdYZEW5g0ZpRKrRF
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - 6wo8eA==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtRDPYEpkzGNlUH3pcYIvCwA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:31:38 GMT
+      etag:
+      - ! '"19rzd8wXPyJHPFDeRiVDhy"'
+      date:
+      - Tue, 29 Nov 2011 05:27:01 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/ArZxdsgs51pg9hJ5OaSHdq8ZTTL
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - 6wo8eA==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtcjLYEpkzGNlUH3pcYIvCwA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:31:38 GMT
+      etag:
+      - ! '"3JgBuATYM8gMHf1cgitOb5"'
+      date:
+      - Tue, 29 Nov 2011 05:27:01 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/2hIdx4LtMwNkBIz4LyHIqCd0fzK
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - 6wo8eA==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtZDOYEpkzGNlUH3pcYIvCwA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:31:38 GMT
+      etag:
+      - ! '"6mGzYQp8soYRdDaSsi72b3"'
+      date:
+      - Tue, 29 Nov 2011 05:27:01 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/9HqgBqXDOR1lFLpS4tkDjBKoDMI
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - 6wo8eA==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtZDMYEpkzGNlUH3pcYIvCwA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:31:39 GMT
+      etag:
+      - ! '"5fEXgbtxEdfN5B6A2kD9aa"'
+      date:
+      - Tue, 29 Nov 2011 05:27:01 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/ZBXhpOni94feIQTYyPf7iHCt3eE
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - W/r/PQ==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodteDLYEpkzGNlsHjpcYIvCwA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:31:57 GMT
+      etag:
+      - ! '"4GNlFolMkgXcVw5rPghZIq"'
+      date:
+      - Tue, 29 Nov 2011 05:27:20 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/YLNpzAJR1IbkjTaau4t3cJEMD0
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - W/r/PQ==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtZDKYEpkzGNlsHjpcYIvCwA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:31:57 GMT
+      etag:
+      - ! '"FYFKjVyg9Jdl4JvBoN1jC"'
+      date:
+      - Tue, 29 Nov 2011 05:27:20 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/IXsckATJfIHq9whKc4KrPSM5cH4
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - W/r/PQ==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodteDLYEpkzGNlsHjpcYIvCwA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:31:57 GMT
+      etag:
+      - ! '"7Wy7NOwmfRLPRLKWdnqx0A"'
+      date:
+      - Tue, 29 Nov 2011 05:27:20 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/OktFjVXJGz8IiLWHOxky2AzzvlI
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - W/r/PQ==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtRDNYEpkzGNlsHjpcYIvCwA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:31:58 GMT
+      etag:
+      - ! '"7NXktyoB4Svwve6UpCf2zt"'
+      date:
+      - Tue, 29 Nov 2011 05:27:20 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/Z3jhkZKRZHOgt6be5o3icw0GQDI
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - A9jcIg==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodteDLYEpkzGNluPzS4wRfFgA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:34:34 GMT
+      etag:
+      - ! '"5bw8TFBrlzhxjhyn0wamPj"'
+      date:
+      - Tue, 29 Nov 2011 05:29:55 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/K2M3FfMQxYOMCDEm1PLj8EI07Y
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - A9jcIg==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodteDLYEpkzGNluPzS4wRfFgA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:34:34 GMT
+      etag:
+      - ! '"1G5YvqEXDDvNVftZdsEYXD"'
+      date:
+      - Tue, 29 Nov 2011 05:29:55 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/J5Um4pknRkW0vLCo0x1fYEESo2P
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - A9jcIg==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodteDLYEpkzGNluPzS4wRfFgA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:34:34 GMT
+      etag:
+      - ! '"5YNa7orkTEG1smY3jEIoNW"'
+      date:
+      - Tue, 29 Nov 2011 05:29:55 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/1J74zRDytiN0HbJQhVdEnGoGP9v
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - A9jcIg==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtRDNYEpkzGNluPzS4wRfFgA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:34:34 GMT
+      etag:
+      - ! '"PEQBgGIX8ZT5IsoNAkte2"'
+      date:
+      - Tue, 29 Nov 2011 05:29:55 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/9Rrw3FUsG4Z5fwBXmnzDCVVTyWa
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - Uo2jiw==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtRDJYEpkzGNluPvS4wRfFgA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:34:45 GMT
+      etag:
+      - ! '"7J29sNQd1jQk9eoXt1eksA"'
+      date:
+      - Tue, 29 Nov 2011 05:30:05 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/4BqctTNl3VDk7sLFX9nMqEdTVfJ
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - Uo2jiw==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodteDLYEpkzGNluPvS4wRfFgA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:34:45 GMT
+      etag:
+      - ! '"21ML1ySzerGqlXw1bheam5"'
+      date:
+      - Tue, 29 Nov 2011 05:30:05 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/6fiRMnKRmvGw3swxfGjw7PvUlTu
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - Uo2jiw==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtRDKYEpkzGNluPfS4wRfFgA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:34:45 GMT
+      etag:
+      - ! '"5JGU80SA32m1pyw9MHdfli"'
+      date:
+      - Tue, 29 Nov 2011 05:30:06 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/NRnlgEePJiBpwnl1cVbCxfbl3iS
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - Uo2jiw==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtRDIYEpkzGNluPfS4wRfFgA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:34:45 GMT
+      etag:
+      - ! '"4lJ3LPjeyyvXuhlJ6C7pQX"'
+      date:
+      - Tue, 29 Nov 2011 05:30:06 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - y/LVag==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      vary:
+      - Accept
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </buckets>; rel="riak_kv_wm_buckets",</riak>; rel="riak_kv_wm_buckets",</buckets>;
+        rel="riak_kv_wm_index",</buckets>; rel="riak_kv_wm_keylist",</buckets>; rel="riak_kv_wm_link_walker",</riak>;
+        rel="riak_kv_wm_link_walker",</mapred>; rel="riak_kv_wm_mapred",</buckets>;
+        rel="riak_kv_wm_object",</riak>; rel="riak_kv_wm_object",</ping>; rel="riak_kv_wm_ping",</buckets>;
+        rel="riak_kv_wm_props",</stats>; rel="riak_kv_wm_stats"
+      date:
+      - Tue, 29 Nov 2011 05:30:49 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '366'
+    body: ! '{"riak_kv_wm_buckets":"/buckets","riak_kv_wm_buckets":"/riak","riak_kv_wm_index":"/buckets","riak_kv_wm_keylist":"/buckets","riak_kv_wm_link_walker":"/buckets","riak_kv_wm_link_walker":"/riak","riak_kv_wm_mapred":"/mapred","riak_kv_wm_object":"/buckets","riak_kv_wm_object":"/riak","riak_kv_wm_ping":"/ping","riak_kv_wm_props":"/buckets","riak_kv_wm_stats":"/stats"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/L2UX3op0QGdfqBfA7TgWJ5L42oH
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - 4xJ14w==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodteDLYEpkzGNlEH7lcYIvCwA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:35:39 GMT
+      etag:
+      - ! '"2K3GWlW2zrwy1aGC5cYIKe"'
+      date:
+      - Tue, 29 Nov 2011 05:30:59 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/ZZowpuinamFBIFFdTANmcJ8Hg9Z
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - 4xJ14w==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtRDNYEpkzGNlEHnlcYIvCwA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:35:39 GMT
+      etag:
+      - ! '"3QWVtEPyLUyqRiQt00c5AS"'
+      date:
+      - Tue, 29 Nov 2011 05:31:00 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/8NJzgqgch5c7LF1bp3NHUS8khp7
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - 4xJ14w==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtRDOYEpkzGNlEHnlcYIvCwA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:35:39 GMT
+      etag:
+      - ! '"2rQT46UuAzkC77Lelvgj1I"'
+      date:
+      - Tue, 29 Nov 2011 05:31:00 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/O4TSXy52b0bi80b8H9uKZRdijWY
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - 4xJ14w==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtcjLYEpkzGNlEHnlcYIvCwA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:35:40 GMT
+      etag:
+      - ! '"3Rfk5MZ2dpa1pXtbmEoRjE"'
+      date:
+      - Tue, 29 Nov 2011 05:31:00 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/a8E1g4YQYnjjrX5WrjPdL4QcClr
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - /Lv7Hg==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtZDOYEpkzGNlkHvlcYIvCwA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:35:50 GMT
+      etag:
+      - ! '"1nw7EMLZMTEW3MxQOBimRN"'
+      date:
+      - Tue, 29 Nov 2011 05:31:10 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/MWJjNtX252TsqH0GZ7ObK0NQTJV
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - /Lv7Hg==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtRDNYEpkzGNlkHvlcYIvCwA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:35:50 GMT
+      etag:
+      - ! '"4XnuSrIpnvjao65wua3hF1"'
+      date:
+      - Tue, 29 Nov 2011 05:31:10 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/a43WjzWqA0Mr2MPsrG2c86iE6g1
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - /Lv7Hg==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtcjLYEpkzGNlkHvlcYIvCwA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:35:50 GMT
+      etag:
+      - ! '"1BDUJUGeZEHF8yfjEmYwAC"'
+      date:
+      - Tue, 29 Nov 2011 05:31:10 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/YBTGgtUl7KObuR5bai02kk1hhd4
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - /Lv7Hg==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtRDOYEpkzGNlkH/lcYIvCwA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:35:50 GMT
+      etag:
+      - ! '"ZaytW38S65SvPrVPaP1BS"'
+      date:
+      - Tue, 29 Nov 2011 05:31:11 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/FfYJYbiqiYxvPQcnY0CVBNh9xGc
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - 0TFkZg==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtajIYEpkzGNlmPrK4wRfFgA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:37:50 GMT
+      etag:
+      - ! '"1PUQ9BEDrXEYFTLYURvKf3"'
+      date:
+      - Tue, 29 Nov 2011 05:33:09 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/XhtWE00pm9TEw6OaU2MJ452XoDZ
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - 0TFkZg==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtRDIYEpkzGNlmPbK4wRfFgA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:37:51 GMT
+      etag:
+      - ! '"2a42CKr4iP8ZCQOtMfSWqj"'
+      date:
+      - Tue, 29 Nov 2011 05:33:10 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/PFbFzUjhVa8mJ01wHp4KujEOJDh
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - 0TFkZg==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtRDJYEpkzGNlmPbK4wRfFgA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:37:51 GMT
+      etag:
+      - ! '"1McVRKhNHajUZw6TttK1od"'
+      date:
+      - Tue, 29 Nov 2011 05:33:10 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/FaE2x87cF04N1icEmwlB838nr9x
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - 0TFkZg==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtRDOYEpkzGNlmPbK4wRfFgA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:37:51 GMT
+      etag:
+      - ! '"29HWJ7BLgRWofE3LHIF4h5"'
+      date:
+      - Tue, 29 Nov 2011 05:33:10 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/F03tQveM9Fjt4K7mbBJtWs2mcME
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - Kmkkeg==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtZDMYEpkzGNl2P3K4wRfFgA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:38:29 GMT
+      etag:
+      - ! '"15eQu46zeugMqPrTK61gm6"'
+      date:
+      - Tue, 29 Nov 2011 05:33:47 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/SKTwTtMP5T0TCGma4yntEG0b7Zx
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - Kmkkeg==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtZDJYEpkzGNl2PPK4wRfFgA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:38:29 GMT
+      etag:
+      - ! '"QNsOmxFv3bSINqvP3yd9R"'
+      date:
+      - Tue, 29 Nov 2011 05:33:48 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/K99AMAm0vCeJ0xdLGfxh1zUwu7R
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - Kmkkeg==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodteDLYEpkzGNl2PPK4wRfFgA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:38:29 GMT
+      etag:
+      - ! '"qF6utZCNOnI1FPCTwqmKR"'
+      date:
+      - Tue, 29 Nov 2011 05:33:48 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/iIUoK1wG51Z9Gfis49VJDJ4pmy
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - Kmkkeg==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtZDOYEpkzGNl2PPK4wRfFgA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:38:30 GMT
+      etag:
+      - ! '"47WqNoxbR16yI1WjnB21v6"'
+      date:
+      - Tue, 29 Nov 2011 05:33:48 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/FHQ9ObT4SCDPTztg6iJKcn3WPya
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - RUj53w==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtRDOYEpkzGNlOPzK4wRfFgA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:38:37 GMT
+      etag:
+      - ! '"oRJa392Ca1Gd4uthq60id"'
+      date:
+      - Tue, 29 Nov 2011 05:33:55 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/HrAxE4irgE9OiSKXb9o9bXIAFon
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - RUj53w==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtcjKYEpkzGNlOPzK4wRfFgA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:38:37 GMT
+      etag:
+      - ! '"5Pqtk4EC4iYAC14HEhYyae"'
+      date:
+      - Tue, 29 Nov 2011 05:33:55 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/JEEaeAluT6enroIKJlm2wsoKU0n
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - RUj53w==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtRDJYEpkzGNlOPzK4wRfFgA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:38:37 GMT
+      etag:
+      - ! '"7HTUmHDFwIj5LTgmpqTkpw"'
+      date:
+      - Tue, 29 Nov 2011 05:33:56 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/Jq80ZWK6Ex9drd1mW2mpBUFUF3z
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - RUj53w==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtRDKYEpkzGNlOPLK4wRfFgA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:38:37 GMT
+      etag:
+      - ! '"16qWLnrztkMtxsZFx8NQSl"'
+      date:
+      - Tue, 29 Nov 2011 05:33:56 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/HV3nfaz1fb0iUpYx5p8uK9Dr7Xm
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - wyC/SA==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtcjKYEpkzGNlUH7tcYIvCwA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:40:13 GMT
+      etag:
+      - ! '"6ttGCf4ZAJeDWFbPSFBT1V"'
+      date:
+      - Tue, 29 Nov 2011 05:35:31 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/TD6vTbafgjRJffmZzPZfIXCmdBN
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - wyC/SA==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtRDIYEpkzGNlUH7tcYIvCwA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:40:14 GMT
+      etag:
+      - ! '"6Mzn9Dcz0p4GgpqGwfcHbJ"'
+      date:
+      - Tue, 29 Nov 2011 05:35:31 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/MoORxZbfxZr9XfsgPjxovniDIYi
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - wyC/SA==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtZDJYEpkzGNlUH7tcYIvCwA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:40:14 GMT
+      etag:
+      - ! '"1QtumAQMeUbu7w7kfHxJEQ"'
+      date:
+      - Tue, 29 Nov 2011 05:35:31 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/SFnC0m1NrJ0Ix4vs2oZQ0MilJ9N
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - wyC/SA==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtRDMYEpkzGNlUHntcYIvCwA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:40:14 GMT
+      etag:
+      - ! '"UkpShA1WpbBT22C6fYOmy"'
+      date:
+      - Tue, 29 Nov 2011 05:35:32 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/MUra5Xglmzg0ywXPseC8KtQGWa3
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - 6dyXnA==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtZDIYEpkzGNlSH3tcYIvCwA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:41:20 GMT
+      etag:
+      - ! '"68VQK7TfSNgIx3G8w99t9Q"'
+      date:
+      - Tue, 29 Nov 2011 05:36:37 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/ZGIRFETEaU9wRAgxKKrwcP1VcEm
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - 6dyXnA==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtRDJYEpkzGNlSH3tcYIvCwA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:41:20 GMT
+      etag:
+      - ! '"6E5NLLbTHY0FfiedEKF5CK"'
+      date:
+      - Tue, 29 Nov 2011 05:36:37 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/BBnHFUkOaavMor1a49uALij890l
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - 6dyXnA==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtRDJYEpkzGNlSH3tcYIvCwA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:41:20 GMT
+      etag:
+      - ! '"5weMsZGKjauFeoPZFXPSm7"'
+      date:
+      - Tue, 29 Nov 2011 05:36:37 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/invalid
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - 6dyXnA==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 404
+      message: Object Not Found
+    headers:
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      date:
+      - Tue, 29 Nov 2011 05:36:38 GMT
+      content-type:
+      - text/plain
+      content-length:
+      - '10'
+    body: ! 'not found
+
+'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_person/YEen3u862CHsPl6hC19uCsfFcH9
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - 6dyXnA==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtRDNYEpkzGNlSHvtcYIvCwA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_person>; rel="up"
+      last-modified:
+      - Sun, 27 Nov 2011 18:41:21 GMT
+      etag:
+      - ! '"2umuIWUPKtihB0RbdkyO98"'
+      date:
+      - Tue, 29 Nov 2011 05:36:38 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'

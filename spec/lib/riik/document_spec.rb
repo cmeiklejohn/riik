@@ -2,8 +2,17 @@ require 'spec_helper'
 
 module Riik
   describe Document do 
-
     subject { person }
+
+    let(:person) { Person }
+
+    it 'contains a bucket name derived from the name' do
+      subject.bucket_name.should == "riik_person"
+    end
+
+    it 'contains a bucket' do
+      subject.bucket.should be_an_instance_of(Riak::Bucket)
+    end
 
     context 'an empty document' do 
       let(:person) { Person.new } 
@@ -20,13 +29,9 @@ module Riik
         end
       end
 
-      it 'contains a bucket derived from the name' do
-        subject.bucket.should == "riik_person"
-      end
-
-      it 'contains a robject of content type javascript' do 
+      it 'contains a robject of content type json' do 
         subject.robject.should be_an_instance_of(Riak::RObject)
-        subject.robject.content_type.should == "application/javascript"
+        subject.robject.content_type.should == "application/json"
       end
     end
 
@@ -42,7 +47,10 @@ module Riik
           subject.send(key).should == value
         end
       end
-    end
 
+      it 'has a valid attributes hash' do
+        attributes.should == subject.attributes
+      end
+    end
   end
 end
