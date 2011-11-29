@@ -15,6 +15,14 @@ module Riik
       end
     end
 
+    def initialize(attributes = {})
+      attributes.each do |key, value|
+        if riik_attributes.include?(key)
+          instance_variable_set "@#{key}", value
+        end
+      end
+    end
+
     def riik_attributes
       self.class.riik_attributes
     end
