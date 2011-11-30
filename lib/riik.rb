@@ -3,26 +3,36 @@ require 'riak'
 
 # Riik is a lightweight object mapper for Riak.
 #
-# Specify a class and include the object mapper mixin.  Then, specify the
-# argument list for the initialize method.
+# To define a class:
 #
 # ```ruby
 # class Person
 #   include Riik::Document
-#   initializes_with :first_name, :last_name
+# 
+#   property :first_name
+#   property :last_name
 # end
 # ```
-#
-# Then, use it!
+# 
+# To use:
 #
 # ```ruby
-# Person.find('this-key-name')  # => #<Person.. @first_name="Fat", @last_name="Mike">
-# p = Person.new('Fat', 'Mike') # => #<Person.. @first_name="Fat", @last_name="Mike">
+# p = Person.new(:first_name => 'Fat', :last_name => 'Mike')
 # p.save # => true
+# p.destroy # => true
+# Person.find(p.key) # => p
 # ```
 #
 module Riik
-  autoload :Configuration, 'riik/configuration'
-  autoload :Persistence,   'riik/persistence'
-  autoload :Document,      'riik/document'
+  autoload :Document, 'riik/document'
+
+  class << self
+    def client=(client)
+      @client = client
+    end
+
+    def client
+      @client ||= Riak::Client.new
+    end
+  end
 end

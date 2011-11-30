@@ -1,69 +1,116 @@
 module Riik
 
-  # Document provides a mixin interface for creating and working with
-  # Riik objects.
-  #
-  # Each class that includes Document can override the methods in this
-  # class for custom behavior regarding how the document is saved to
-  # Riak, where it's save, which client, etc.
+  # Document is the base object for the Riik ORM.  Including it provides
+  # the basic functionality for assigning attributes to models,
+  # assigning a bucket name, and serializing objects.
   #
   module Document
+    autoload :Persistence, 'riik/document/persistence'
+    autoload :Finders,     'riik/document/finders'
+
     def self.included(base)
-      base.send :extend,  Configuration
+      base.send :extend, ClassMethods
+
+      base.send :include, Finders
       base.send :include, Persistence
     end
 
-    # Returns the key that should be used to save the Riak object if no
-    # key is present.
-    #
-    # @return [String] key 
-    #
-    def default_key 
-      Digest::SHA1.hexdigest(attributes.to_json)
+    module ClassMethods
+
+      # List of model properties that should be assigned from the attributes
+      # hash.
+      #
+      attr_reader :riik_attributes
+
+      # Create accessors for each of the properties of the model.
+      #
+      # @private
+      #
+      def property(attribute)
+        @riik_attributes ||= []
+        @riik_attributes << attribute
+
+        attr_accessor attribute
+      end
+
+      # Returns the Riak bucket for this object.
+      #
+      # @return [Riak::Bucket]
+      #
+      def bucket
+        @bucket ||= Riik.client.bucket(bucket_name)
+      end
+
+      # Returns the bucket name for this object.  Override in your class
+      # to change.
+      #
+      # @return [String] bucket name.
+      #
+      def bucket_name
+        self.to_s.gsub(/::/, '_').downcase
+      end
     end
 
-    # Defines the content type that should be used to save the Riak
-    # object.
+    # Assign model attributes through initialization hash.
     #
-    # @return [String] content-type
+    # @param [Hash] attributes
     #
-    def content_type 
-      "application/json"
+    def initialize(attributes = {})
+      attributes.symbolize_keys.each do |key, value|
+        if riik_attributes.include?(key)
+          instance_variable_set "@#{key}", value
+        end
+      end
     end
 
-    # Defines which bucket this class should create keys in.
+    # Serialize the attributes of this model.
     #
-    # @return [Riak::Bucket] Riak bucket instance.
+    # @return [Hash] serialized attributes.
+    # @private
     #
-    def bucket
-      client.bucket("riik")
+    def attributes
+      Hash[riik_attributes.zip(riik_attributes.map { |attr| instance_variable_get "@#{attr}" })]
     end
 
-    # Defines which client this class should search for buckets in.
+    # Return the riik attribute list for this class.
     #
-    # @return [Riak::Client] Riak client instance.
-    #
-    def client
-      Riak::Client.new
-    end
-
-    # Delegate list of riik attributes to the class-level.
-    # 
+    # @return [Array] symbols for each model property.
     # @private
     #
     def riik_attributes
       self.class.riik_attributes
     end
-    private :riik_attributes
 
-    # Defines how the attributes get assembled into a hash for
-    # serialization.
+    # Return the bucket for this class.
     #
+    # @return [Riak::Bucket]
+    #
+    def bucket
+      self.class.bucket
+    end
+
+    # Delegate the object key to the Riak object.
+    # 
+    # @return [String]
+    #
+    def key
+      robject.key
+    end
+
+    # Store the current Riak client object.
+    #
+    attr_accessor :robject
+
+    # Create or return the current Riak client object.
+    #
+    # @return [Riak::RObject]
     # @private
     #
-    def attributes
-      Hash[riik_attributes.map { |key| [key, instance_variable_get("@#{key}")] }]
+    def robject
+      @robject ||= Riak::RObject.new(bucket).tap do |object|
+        object.content_type = "application/json"
+      end
     end
-    private :attributes
   end
+
 end
