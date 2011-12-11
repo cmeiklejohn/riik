@@ -5,6 +5,8 @@ $LOAD_PATH << File.join(PROJECT_ROOT, "lib")
 
 Bundler.require
 
+Dir[Rails.root.join("spec/support/**/*.rb")].each {|f| require f}
+
 require 'riik'
 
 require 'vcr'
