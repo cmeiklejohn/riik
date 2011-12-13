@@ -8,6 +8,7 @@ Bundler.require
 Dir[File.join(PROJECT_ROOT,"spec/support/**/*.rb")].each {|f| require f}
 
 require 'riik'
+require 'ripple'
 
 require 'vcr'
 
