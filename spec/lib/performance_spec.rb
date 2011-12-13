@@ -1,6 +1,4 @@
 require 'spec_helper'
-require 'ripple'
-require 'benchmark'
 
 module Riik
 
