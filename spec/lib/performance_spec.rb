@@ -26,22 +26,6 @@ module Riik
       end
     end
 
-    context 'when creating 300 records' do 
-      it 'is faster than ripple' do 
-        ripple_time = Benchmark.realtime do 
-          300.times.each do |i|
-            RippleDocument.create(:number => i)
-          end
-        end
-        riik_time = Benchmark.realtime do 
-          300.times.each do |i|
-            RiikDocument.create(:number => i)
-          end
-        end
-        riik_time.should < ripple_time
-      end
-    end
-
     context 'when creating 1000 records' do 
       it 'is faster than ripple' do 
         ripple_time = Benchmark.realtime do 
@@ -51,6 +35,22 @@ module Riik
         end
         riik_time = Benchmark.realtime do 
           1000.times.each do |i|
+            RiikDocument.create(:number => i)
+          end
+        end
+        riik_time.should < ripple_time
+      end
+    end
+
+    context 'when creating 10000 records' do 
+      it 'is faster than ripple' do 
+        ripple_time = Benchmark.realtime do 
+          10000.times.each do |i|
+            RippleDocument.create(:number => i)
+          end
+        end
+        riik_time = Benchmark.realtime do 
+          10000.times.each do |i|
             RiikDocument.create(:number => i)
           end
         end
