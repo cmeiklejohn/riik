@@ -33,5 +33,7 @@ end
 # Ripple configuration.
 #
 if ENV['TDDIUM_RIAK_HOST']
-  Ripple.client = Riak::Client.new({:host => ENV['TDDIUM_RIAK_HOST'], :http_port => ENV['TDDIUM_RIAK_HTTP_PORT'].to_i})
+  client = Riak::Client.new({:host => ENV['TDDIUM_RIAK_HOST'], :http_port => ENV['TDDIUM_RIAK_HTTP_PORT'].to_i})
+  Riik.client = client
+  Ripple.client = client
 end
