@@ -18,6 +18,24 @@ module Riik
           end
         end
 
+        context 'once created with a default key' do 
+          let(:person) do 
+            VCR.use_cassette('creation_of_nonexistent_default_key') do 
+              DefaultKeyPerson.create(attributes)
+            end
+          end
+
+          it 'should exist in riak correctly' do
+            VCR.use_cassette('loading_of_valid_default_key') do 
+              subject.bucket.get(subject.default_key).should be_an_instance_of(Riak::RObject)
+
+              attributes.each do |key, value|
+                subject.send(key).should == value
+              end
+            end
+          end
+        end
+
         context 'once created' do 
           let(:person) do 
             VCR.use_cassette('creation_of_nonexistent_key') do 

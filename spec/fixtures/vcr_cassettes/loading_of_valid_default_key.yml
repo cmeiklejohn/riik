@@ -1,0 +1,36 @@
+---
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://127.0.0.1:8098/riak/riik_defaultkeyperson/key-Fat
+    body: 
+    headers:
+      accept:
+      - multipart/mixed, application/json;q=0.7, */*;q=0.5
+      x-riak-clientid:
+      - OR6jNQ==
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-riak-vclock:
+      - a85hYGBgzGDKBVIcypz/fvodtZDMYEpky2NlOLw65gRfFgA=
+      vary:
+      - Accept-Encoding
+      server:
+      - MochiWeb/1.1 WebMachine/1.9.0 (participate in the frantic)
+      link:
+      - </riak/riik_defaultkeyperson>; rel="up"
+      last-modified:
+      - Wed, 14 Dec 2011 03:34:45 GMT
+      etag:
+      - ! '"5ABAkxudMeKGIQ2rvyD947"'
+      date:
+      - Wed, 14 Dec 2011 05:10:27 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+    body: ! '{"first_name":"Fat","last_name":"Mike"}'
+    http_version: '1.1'

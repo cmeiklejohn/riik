@@ -104,13 +104,16 @@ module Riik
     # Create or return the current Riak client object.
     #
     # @return [Riak::RObject]
-    # @private
     #
     def robject
-      @robject ||= Riak::RObject.new(bucket).tap do |object|
+      key = self.respond_to?(:default_key) ? self.default_key : nil
+
+      @robject ||= Riak::RObject.new(bucket, key).tap do |object|
         object.content_type = "application/json"
       end
     end
   end
+
+
 
 end

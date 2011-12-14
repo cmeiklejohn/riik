@@ -28,6 +28,17 @@ module Riik
     property :first_name
     property :last_name
   end
+
+  class DefaultKeyPerson
+    include Riik::Document
+
+    property :first_name
+    property :last_name
+
+    def default_key 
+      "key-#{first_name}"
+    end
+  end
 end
 
 # Ripple configuration.
