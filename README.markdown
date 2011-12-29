@@ -1,10 +1,8 @@
-Riik
-====
+# Riik
 
 Lightweight object mapper for Riak.
 
-Motivation
-==========
+## Motivation
 
 Riik doesn't support everything you would exepct from a full ORM.  There
 are no validations, no callbacks, and no error handling, as the primary
@@ -21,8 +19,7 @@ If you're looking at building a gem or Ruby application that needs to
 write serialized objects directly to Riak without any overhead, look no
 further.
 
-Usage 
-=====
+## Usage 
 
 To define a class:
 
@@ -44,7 +41,13 @@ p.destroy # => true
 Person.find(p.key) # => p
 ```
 
-License
-=======
+## Contributing
+
+1. Fork the official repository.
+2. Make your changes in a topic branch (with tests, please).
+3. Send a pull request.
+4. Once accepted, you'll get a free limited-run Critical Pair t-shirt!
+
+## License
 
 Riik is Copyright © 2011 Critical Pair.  Riik is free software, and may be redistributed under the terms specified in the LICENSE file.
